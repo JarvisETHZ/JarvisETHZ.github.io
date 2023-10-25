@@ -92,8 +92,8 @@
 <img alt="Richard hanrick" src="./assets/images/my-avatar.png" width="80"/>
 </figure>
 <div class="info-content">
-<h1 class="name" title="Mengshuo Jia">Mengshuo Jia</h1>
-<p class="title">Senior Scientist @ ETH Zurich</p>
+<h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+<p class="title">Web developer</p>
 </div>
 <button class="info_more-btn" data-sidebar-btn="">
 <span>Show Contacts</span>
@@ -833,11 +833,30 @@
 </div>
 </main>
 <!--
-    - custom js link
+    - ionicon link
   -->
 <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
+const text1 = "Human describes, AI builds, human debugs";
+const text2 = "Welcome to Mengshuo Jia's adventure";
+let idx1 = 0;
+let idx2 = 0;
+
+function typeEffect() {
+    if (idx1 < text1.length) {
+        document.getElementById('text1').innerText += text1.charAt(idx1);
+        idx1++;
+        setTimeout(typeEffect, 100);
+    } else if (idx2 < text2.length) {
+        document.getElementById('text2').innerText += text2.charAt(idx2);
+        idx2++;
+        setTimeout(typeEffect, 100);
+    }
+}
+
+window.onload = typeEffect;
+</script><script>
 const text1 = "Human&nbsp;describes,&nbsp;AI&nbsp;builds,&nbsp;human&nbsp;debugs";
 const text2 = "Welcome&nbsp;to&nbsp;Mengshuo&nbsp;Jia's&nbsp;adventure";
 let idx1 = 0;
