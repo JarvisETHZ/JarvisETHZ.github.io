@@ -39,7 +39,7 @@
 }
 
 #cover {
-    background-color: #1f1f1f;  /* Adjusted to a dark background */
+    background-color: #121212;  /* Adjusted to a dark background */
 }
 .typing-text {
     font-size: 24px;
@@ -806,7 +806,26 @@
 <!--
     - custom js link
   -->
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/script.js">
+const text1 = "Human describes, AI builds, human debugs";
+const text2 = "Welcome to Mengshuo Jia's adventure";
+let idx1 = 0;
+let idx2 = 0;
+
+function typeEffect() {
+    if (idx1 < text1.length) {
+        document.getElementById('text1').textContent += text1.charAt(idx1);
+        idx1++;
+        setTimeout(typeEffect, 100);
+    } else if (idx2 < text2.length) {
+        document.getElementById('text2').textContent += text2.charAt(idx2);
+        idx2++;
+        setTimeout(typeEffect, 100);
+    }
+}
+
+window.onload = typeEffect;
+</script>
 <!--
     - ionicon link
   -->
