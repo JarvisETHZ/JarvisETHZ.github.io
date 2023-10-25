@@ -9,7 +9,7 @@ Web developer
 Show Contacts
 
 Email
-richard@example.com
+jia@eeh.ee.ethz.ch
 
 Phone
 +1 (213) 352-2795
