@@ -48,8 +48,29 @@
     font-family: 'Courier New', Courier, monospace;  /* Set to a monospace font */
     letter-spacing: 1px;  /* Add space between letters */
 }
+</style><style>
+#cover {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.typing-text {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    white-space: pre;
+}
 </style></head>
-<body><div id="cover"><div class="typing-text"><span id="text1"></span><br/><span id="text2"></span></div></div>
+<body><div id="cover"><div class="typing-text"><span id="text1"></span><br/><span id="text2"></span></div></div><div id="cover"><div class="typing-text"><span id="text1"></span><br/><span id="text2"></span></div></div>
 <!--
     - #MAIN
   -->
@@ -844,6 +865,25 @@ function typeEffect() {
         setTimeout(typeEffect, 100);
     } else if (idx2 < text2.length) {
         document.getElementById('text2').innerText += text2.charAt(idx2);
+        idx2++;
+        setTimeout(typeEffect, 100);
+    }
+}
+
+window.onload = typeEffect;
+</script><script>
+const text1 = "Human&nbsp;describes,&nbsp;AI&nbsp;builds,&nbsp;human&nbsp;debugs";
+const text2 = "Welcome&nbsp;to&nbsp;Mengshuo&nbsp;Jia's&nbsp;adventure";
+let idx1 = 0;
+let idx2 = 0;
+
+function typeEffect() {
+    if (idx1 < text1.length) {
+        document.getElementById('text1').innerHTML += text1.charAt(idx1);
+        idx1++;
+        setTimeout(typeEffect, 100);
+    } else if (idx2 < text2.length) {
+        document.getElementById('text2').innerHTML += text2.charAt(idx2);
         idx2++;
         setTimeout(typeEffect, 100);
     }
