@@ -856,24 +856,6 @@ function typeEffect() {
 }
 
 window.onload = typeEffect;
-</script><script>
-const text1 = "Human&nbsp;describes,&nbsp;AI&nbsp;builds,&nbsp;human&nbsp;debugs";
-const text2 = "Welcome&nbsp;to&nbsp;Mengshuo&nbsp;Jia's&nbsp;adventure";
-let idx1 = 0;
-let idx2 = 0;
-
-function typeEffect() {
-    if (idx1 < text1.length) {
-        document.getElementById('text1').innerHTML += text1.charAt(idx1);
-        idx1++;
-        setTimeout(typeEffect, 100);
-    } else if (idx2 < text2.length) {
-        document.getElementById('text2').innerHTML += text2.charAt(idx2);
-        idx2++;
-        setTimeout(typeEffect, 100);
-    }
-}
-
-window.onload = typeEffect;
-</script></body>
+</script>
+</body>
 </html>
