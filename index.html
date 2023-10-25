@@ -92,7 +92,7 @@
 <img alt="Richard hanrick" src="./assets/images/my-avatar.png" width="80"/>
 </figure>
 <div class="info-content">
-<h1 class="name" title="Richard hanrick">Mengshuo Jia</h1>
+<h1 class="name" title="Richard hanrick">Dr.Mengshuo Jia</h1>
 <p class="title">Senior Scientist @ ETH Zürich</p>
 </div>
 <button class="info_more-btn" data-sidebar-btn="">
@@ -838,14 +838,16 @@
 <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
-const text1 = "''Human Describes";
+const text1 = "&quot;Human Describes";
 const text2 = "AI Builds";
-const text3 = "Human Improves''";
-const text4 = "Mengshuo Jia";
+const text3 = "Human Improves&quot;";
+const text4 = "  ";
+const text5 = "This is Mengshuo Jia";
 let idx1 = 0;
 let idx2 = 0;
 let idx3 = 0;
 let idx4 = 0;
+let idx5 = 0;
 
 function typeEffect() {
     if (idx1 < text1.length) {
@@ -864,7 +866,12 @@ function typeEffect() {
         document.getElementById('text4').innerText += text4.charAt(idx4);
         idx4++;
         setTimeout(typeEffect, 100);
+    } else if (idx4 < text5.length) {
+        document.getElementById('text5').innerText += text5.charAt(idx5);
+        idx5++;
+        setTimeout(typeEffect, 100);
     }
+    
 }
 
 window.onload = typeEffect;
