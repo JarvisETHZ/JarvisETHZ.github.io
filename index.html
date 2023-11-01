@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
   <!--
     - custom css link
@@ -74,7 +74,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:jia@eeh.ee.ethz.ch" class="contact-link">jia@eeh.ee.ethz.ch</a>
+              <a href="mailto:jia@eeh.ee.ethz.ch" class="contact-link">jia [at] eeh.ee.ethz.ch</a>
             </div>
 
           </li>
@@ -82,13 +82,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <img src="assets/images/ORCID_icon.png" style="width: 18px;">
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title">ORCiD</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <address>0000-0002-2027-5314</address>
             </div>
 
           </li>
@@ -96,13 +96,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+              <img src="assets/images/website_icon.png" style="width: 18px;">
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title">Personal Website</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <a href="http://www.shuo.science" class="contact-link">www.shuo.science</a>
             </div>
 
           </li>
@@ -110,13 +110,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <img src="assets/images/website_icon.png" style="width: 18px;">
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title">Institutional Website</p>
 
-              <address>Sacramento, California, USA</address>
+              <a href="https://psl.ee.ethz.ch/people/person-detail.MjYzNzU2.TGlzdC8yNTEyLC0xNTM3NjU3MDcy.html" class="contact-link">psl.ee.ethz.ch/shuo</a>
             </div>
 
           </li>
@@ -125,29 +125,39 @@
 
         <div class="separator"></div>
 
-        <ul class="social-list">
+          <ul class="social-list">
 
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a href="https://scholar.google.ch/citations?user=1qq4l9IAAAAJ&hl=en" class="social-link" target="_blank">
+                <!-- You might need a custom icon or image for Google Scholar as ion-icon may not have a specific one for it. -->
+                <img src="assets/images/google_scholar_icon_Golden.png" alt="Google Scholar" style="width: 19px;">
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/mengshuo-jia-340272257/" class="social-link" target="_blank">
+                <img src="assets/images/Linkedin_icon.png" alt="Linkedin" style="width: 20px;">
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a href="https://ieeexplore.ieee.org/author/37086556943" class="social-link" target="_blank">
+                <!-- Again, you might need a custom icon or image for IEEE. -->
+                <img src="assets/images/IEEE_icon_Golden.png" alt="IEEE" style="width: 24px;">
+              </a>
+            </li>
 
-        </ul>
+            <li class="social-item">
+              <a href="https://www.researchgate.net/profile/Mengshuo-Jia" class="social-link" target="_blank">
+                <!-- And a custom icon or image for ResearchGate. -->
+                <img src="assets/images/RG_icon.png" alt="Researchgate" style="width: 20px;">
+              </a>
+            </li>
 
-      </div>
+          </ul>
+
+        </div>
+
 
     </aside>
 
@@ -174,11 +184,19 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Bio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>News</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Award</button>
           </li>
 
           <li class="navbar-item">
@@ -209,18 +227,13 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I received the B.E. degree in electrical engineering from North China Electric Power University, Baoding, China, in 2016, and the Ph.D. degree in electrical engineering from Tsinghua University, Beijing, China, in 2021. I am currently a <a href="https://psl.ee.ethz.ch/people/person-detail.MjYzNzU2.TGlzdC8yNTEyLC0xNTM3NjU3MDcy.html" style="display: inline; color: var(--orange-yellow-crayola);">postdoctoral researcher</a> at the <a href="https://psl.ee.ethz.ch/" style="display: inline; color: var(--orange-yellow-crayola);">Power Systems Laboratory of ETH Zürich</a>. I also serve as the Associate Editor for two international journals, i.e., the <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4267003" style="display: inline; color: var(--orange-yellow-crayola);">IEEE Systems Journal (Impact Factor: 4.802)</a> and the <a href="https://ietresearch.onlinelibrary.wiley.com/journal/17521424" style="display: inline; color: var(--orange-yellow-crayola);">IET Renewable Power Generation (Impact Factor: 3.304)</a>. 
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            I am passionate about fundamental studies centered around the energy domain, including smarter gird, AI4Science, probabilistic analysis, stochastic optimization, distributed computing, and privacy preservation. To know more about me, please <a href="cv.pdf" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">download my cv</a> or click the <a href="http://www.shuo.science" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">Resume</a> button at the  navigation bar above.
           </p>
+
         </section>
 
 
@@ -230,22 +243,21 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">News</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Oct. 20, 2023</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  I have been awarded a SPARK Grant by the <a href="https://www.snf.ch/en" style="display: inline; color: var(--orange-yellow-crayola);">Swiss National Science Foundation (SNSF)</a> and became a PI.
                 </p>
               </div>
 
@@ -254,14 +266,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Sept. 23, 2023</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  I start to provide continual technical support for editorial and review processes in <a href="https://pscc2024.fr/" style="display: inline; color: var(--orange-yellow-crayola);">Power Systems Computation Conference 2024</a>.
                 </p>
               </div>
 
@@ -270,14 +282,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Jun. 25, 2023</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  I am invited to serve as the chair for the session “Load Flow and Power Quality” in <a href="https://powertech2023.com/" style="display: inline; color: var(--orange-yellow-crayola);">IEEE PowerTech Belgrade 2023</a>.
                 </p>
               </div>
 
@@ -286,20 +298,30 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Apr. 17, 2023</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  I have been awarded the first prize of high-influence papers by Chinese Society for Electrical Engineering, High Voltage Committee, for this <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/hve2.12232" style="display: inline; color: var(--orange-yellow-crayola);">collaborative work</a> in the background of carbon neutrality. 
                 </p>
               </div>
 
             </li>
 
           </ul>
+
+
+          <section class="about-text">
+            <br>
+            <p class="centered-text">
+              For more updates, announcements, and events, please click the <a href="http://www.shuo.science" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">News</a> button at the navigation bar above.
+            </p>
+  
+          </section>
+
 
         </section>
 
@@ -512,10 +534,10 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="bio" data-page="bio">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Biography</h2>
         </header>
 
         <section class="timeline">
@@ -697,18 +719,111 @@
 
       </article>
 
+    
+
+      <!--
+        - #News
+      -->
 
 
+      <article class="news" data-page="news">
+
+        <header>
+          <h2 class="h2 article-title">News</h2>
+        </header>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Oct. 20, 2023</h4>
+
+                <p class="service-item-text">
+                  I have been awarded a SPARK Grant by the <a href="https://www.snf.ch/en" style="display: inline; color: var(--orange-yellow-crayola);">Swiss National Science Foundation (SNSF)</a> and became a PI.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Sept. 23, 2023</h4>
+
+                <p class="service-item-text">
+                  I start to provide continual technical support for editorial and review processes in <a href="https://pscc2024.fr/" style="display: inline; color: var(--orange-yellow-crayola);">Power Systems Computation Conference 2024</a>.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Jun. 25, 2023</h4>
+
+                <p class="service-item-text">
+                  I am invited to serve as the chair for the session “Load Flow and Power Quality” in <a href="https://powertech2023.com/" style="display: inline; color: var(--orange-yellow-crayola);">IEEE PowerTech Belgrade 2023</a>.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Apr. 17, 2023</h4>
+
+                <p class="service-item-text">
+                  I have been awarded the first prize of high-influence papers by Chinese Society for Electrical Engineering, High Voltage Committee, for this <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/hve2.12232" style="display: inline; color: var(--orange-yellow-crayola);">collaborative work</a> in the background of carbon neutrality. 
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+      </article>
 
 
       <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+
+      <article class="research" data-page="research">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Research</h2>
         </header>
 
         <section class="projects">
@@ -939,6 +1054,92 @@
 
 
 
+      <article class="award" data-page="award">
+
+        <header>
+          <h2 class="h2 article-title">Awards</h2>
+        </header>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Oct. 20, 2023</h4>
+
+                <p class="service-item-text">
+                  I have been awarded a SPARK Grant by the <a href="https://www.snf.ch/en" style="display: inline; color: var(--orange-yellow-crayola);">Swiss National Science Foundation (SNSF)</a> and became a PI.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Sept. 23, 2023</h4>
+
+                <p class="service-item-text">
+                  I start to provide continual technical support for editorial and review processes in <a href="https://pscc2024.fr/" style="display: inline; color: var(--orange-yellow-crayola);">Power Systems Computation Conference 2024</a>.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Jun. 25, 2023</h4>
+
+                <p class="service-item-text">
+                  I am invited to serve as the chair for the session “Load Flow and Power Quality” in <a href="https://powertech2023.com/" style="display: inline; color: var(--orange-yellow-crayola);">IEEE PowerTech Belgrade 2023</a>.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Apr. 17, 2023</h4>
+
+                <p class="service-item-text">
+                  I have been awarded the first prize of high-influence papers by Chinese Society for Electrical Engineering, High Voltage Committee, for this <a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/hve2.12232" style="display: inline; color: var(--orange-yellow-crayola);">collaborative work</a> in the background of carbon neutrality. 
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+      </article>
 
 
       <!--
