@@ -206,6 +206,10 @@ article {
   z-index: -1;
 }
 
+.centered-text {
+  text-align: center;
+}
+
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
 article { display: none; }
