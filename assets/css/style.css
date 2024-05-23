@@ -210,6 +210,10 @@ article {
   text-align: center;
 }
 
+img.inline-image {
+  display: inline; /* or 'inline-block' */
+}
+
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
 article { display: none; }
@@ -336,7 +340,7 @@ main {
 }
 
 .avatar-box {
-  background: var(--bg-gradient-onyx);
+  background: var(--eerie-black-2);
   border-radius: 20px;
 }
 
@@ -521,9 +525,13 @@ main {
 .service-title { margin-bottom: 20px; }
 
 .service-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start;
+  align-items: stretch; /* Ensure items take full width */
+  gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .service-item {
@@ -1839,9 +1847,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 150px;
+    background: none !important;
+    background-color: transparent !important;
+    display: block; /* Ensure the image displays as a block element */
+    border: none; /* Ensure there are no borders that might affect appearance */} 
 
-  .info-content .name {
+  .info-content .name { 
     white-space: nowrap;
     text-align: center;
   }
