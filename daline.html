@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengshuo Jia</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZR7679P0L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RZR7679P0L');
+  </script>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!-- Structured data for the logo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://www.shuo.science/",
+    "logo": "https://www.shuo.science/assets/images/logo.png"
+  }
+  </script>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  
+
+  <style>
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    background-color: #121212;
+    color: white;
+    /* margin: 0; */
+    /* overflow: hidden; */
+    font-family: Arial, sans-serif;
+    }
+
+    .panel {
+        width: 100%; /* Adjust this to the desired width */
+        overflow: hidden;
+        position: relative;
+        background-color: var(--eerie-black-2);
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .row {
+        display: flex;
+        width: 200%; /* Double the viewport width to ensure continuous flow */
+        white-space: nowrap;
+        position: relative;
+    }
+
+    .row-left {
+        animation: flow-left 60s linear infinite;
+    }
+
+    .row-right {
+        animation: flow-right 60s linear infinite;
+        transform: translateX(-25%); /* Start the view from the middle of the row */
+    }
+
+    .block {
+        display: inline-block;
+        background-color: var(--eerie-black-2);
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 12px;
+        margin: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        text-align: center;
+        flex-shrink: 0; /* Prevent blocks from shrinking too much */
+    }
+
+    @keyframes flow-left {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes flow-right {
+        0% {
+            transform: translateX(-25%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    .dalinehead {
+      font-family: "Times New Roman", Times, serif;
+      font-variant: small-caps;
+      font-weight: bold;
+      color: var(--orange-yellow-crayola); /* Adjust the color if needed */
+      line-height: 1; /* Adjust line-height to prevent breaks */
+      font-size: 2.5em; 
+      margin-top: 20px; /* Adjust the value to set the desired distance */
+      margin-bottom: 1px; /* Adjust the value to set the desired distance below */
+      /* display: inline; */
+    }
+    .dalinehead::first-letter {
+      font-size: 1.5em; /* Make the first letter larger */
+      vertical-align: baseline; /* Align the larger letter properly */
+    }
+    .dalinehead img {
+      vertical-align: middle;
+      margin-right: 5px; /* Adjust spacing between image and text if necessary */
+    }
+    .dalineheadsmall {
+      font-family: "Times New Roman", Times, serif;
+      font-variant: small-caps;
+      font-weight: bold;
+      color: var(--orange-yellow-crayola); /* Adjust the color if needed */
+      line-height: 1.5; /* Adjust line-height to prevent breaks */
+    }
+    .dalineheadsmall::first-letter {
+      font-size: 1.5em; /* Make the first letter larger */
+      vertical-align: baseline; /* Align the larger letter properly */
+    }
+    .dalineinline {
+      font-family: "Times New Roman", Times, serif;
+      font-variant: small-caps;
+      font-weight: bold;
+      color: #ffffff !important;
+      display: inline; /* Ensure it remains inline */
+      line-height: 1.5; /* Adjust line-height to prevent breaks */
+    }
+    .dalineinline::first-letter {
+      font-size: 3em; /* Make the first letter larger */
+      vertical-align: baseline; /* Align the larger letter properly */
+    }
+    .golden {
+        display: inline;
+        color: var(--orange-yellow-crayola);
+    }
+    .largesize {
+      font-size: 2.5em; 
+      /* font-weight: bold; */
+      color: #ffffff; /* Adjust the color if needed */
+      display: inline; /* Ensure it remains inline */
+      line-height: 1; /* Adjust line-height to prevent breaks */
+      margin-top: 10px; /* Adjust the value to set the desired distance */
+      margin-bottom: 10px; /* Adjust the value to set the desired distance below */
+    }
+    .largesize-small {
+      font-size: 2em; 
+      /* font-weight: bold; */
+      color: #ffffff; /* Adjust the color if needed */
+      display: inline; /* Ensure it remains inline */
+      line-height: 1; /* Adjust line-height to prevent breaks */
+      margin-top: 10px; /* Adjust the value to set the desired distance */
+      margin-bottom: 10px; /* Adjust the value to set the desired distance below */
+    }
+    .smallsize {
+      font-size: 1.1em; 
+      /* font-weight: bold; */
+      color: #ffffff; /* Adjust the color if needed */
+      display: inline; /* Ensure it remains inline */
+      line-height: 1.5; /* Adjust line-height to prevent breaks */
+      margin-top: 10px; /* Adjust the value to set the desired distance */
+      margin-bottom: 4px; /* Adjust the value to set the desired distance below */
+    }
+    /* .centered-list {
+            list-style-position: inside;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            width: fit-content;
+        } */
+    .centered-list li {
+        padding-left: 2px; /* Adjust the value as needed */
+    }
+    .half-line-break {
+            display: block;
+            height: 0.5em; /* Adjust the value to be half of the line height */
+            content: "";
+    }
+    .start-button {
+            display: inline-block;
+            padding: 8px 16px; /* Smaller padding */
+            font-size: 14px; /* Smaller font size */
+            font-family: Arial, sans-serif;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            white-space: nowrap; /* Prevent line breaks */
+            border-radius: 25px;
+            }
+
+    .start-button:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+    .start-button:focus {
+            outline: none;
+            }
+
+    .start-button span {
+            margin-left: 5px;
+            }
+
+    .button-container {
+            text-align: center; /* Center the button */
+            margin: 20px 0; /* Add some margin for spacing */
+            }
+    .variable {
+            /* color: #f69d95;  #f69d95 */
+            color: #988989;
+            display: inline;
+            }
+    .field {
+            color: var(--orange-yellow-crayola);
+            display: inline;
+            }
+    .string {
+            color: #6b5b5b;
+            display: inline;
+            }
+    .download-link {
+            display: inline;
+            color: var(--orange-yellow-crayola);
+            text-decoration: underline;
+            }
+    .code-block {
+            background-color: #0d0d0d; /* Background color */
+            padding: 5px 10px; /* Reduced padding */
+            border-radius: 5px; /* Rounded corners */
+            font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+            color: #ffffff; /* Default text color */
+            white-space: pre; /* Preserve whitespace */
+            margin: 0; /* Remove any default margin */
+            line-height: 1.5; /* Adjust line height for compactness */
+            overflow: auto; /* Ensure scrolling for long lines */
+            font-size: 14px; /* Smaller font size */
+            text-align: left; /* Align text to the left */
+            width: 92%; /* Responsive width */
+            max-width: 1000px; /* Maximum width */
+            min-width: 300px; /* Minimum width */
+            }
+
+    .code-block .variable {
+            color: #988989; /* Variable color */
+            display: inline;
+            }
+
+    .code-block .field {
+            color: var(--orange-yellow-crayola); /* Field color */
+            display: inline;
+            }
+
+    .code-block .string {
+            color: #6b5b5b; /* String color */
+            display: inline;
+            }
+    .keyword {
+            color: #268bd2; /* Solarized Blue */
+            display: inline;
+            }
+
+    .strings {
+            color: #dc322f; /* Solarized Red */
+            display: inline;
+            }
+
+    .comment {
+            color: #859900; /* Solarized Green */
+            display: inline;
+            }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    .current-version, .older-versions, .license {
+      margin-bottom: 20px;
+    }
+    .current-version {
+      border: 2px solid var(--orange-yellow-crayola);
+      border-radius: 8px;
+      padding: 15px;
+      background-color: #333;
+    }
+    .license {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-left: 5px solid #ffeeba;
+      border-radius: 8px;
+      font-size: 0.9em;
+      color: #856404;
+    }
+    .license a {
+      color: #856404;
+      text-decoration: none;
+    }
+    .license a:hover {
+      text-decoration: underline;
+    }
+    .older-versions table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .older-versions th, .older-versions td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .older-versions th {
+      background-color: #444;
+      color: #ffffff;
+    }
+    .older-versions td {
+      background-color: #222;
+    }
+    .older-versions a {
+      text-decoration: none;
+      color: var(--orange-yellow-crayola); /* Light red color for links */
+    }
+    .older-versions a:hover {
+      text-decoration: underline;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .highlight {
+      color: #f69d95; /* Highlight color for numbers */
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+   </style>
+   
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <!-- <figure class="avatar-box">
+          <img src="./assets/images/DalineLogo.png" alt="Daline" width="80">
+        </figure> -->
+
+        <!-- <div class="info-content">
+          <h1 class="name" title="贾孟硕 博士" style="font-size: 16px; margin-bottom: 1px;">贾孟硕 博士</h1>
+          <h1 class="name" title="Daline" style="font-size: 16px;  margin-bottom: 6px;">Daline</h1>
+          <p class="title">Data-driven Linearization</p>
+        </div> -->
+
+        <figure class="avatar-box">
+            <img src="./assets/images/my-avatar-shade.png" alt="Dr. Mengshuo Jia" width="80">
+          </figure>
+  
+          <div class="info-content">
+            <h1 class="name" title="贾孟硕 博士" style="font-size: 16px; margin-bottom: 1px;">贾孟硕 博士</h1>
+            <h1 class="name" title="Dr. Mengshuo Jia" style="font-size: 16px;  margin-bottom: 6px;">Dr. Mengshuo Jia</h1>
+            <p class="title">Senior Scientist @ ETH Zürich</p>
+          </div>
+
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jia@eeh.ee.ethz.ch" class="contact-link">jia [at] eeh.ee.ethz.ch</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="assets/images/ORCID_icon.png" style="width: 18px;">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">ORCiD</p>
+
+              <address>0000-0002-2027-5314</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="assets/images/website_icon.png" style="width: 18px;">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Institutional Website</p>
+
+              <a href="https://psl.ee.ethz.ch/people/person-detail.MjYzNzU2.TGlzdC8yNTEyLC0xNTM3NjU3MDcy.html" class="contact-link">psl.ee.ethz.ch/shuo</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="assets/images/website_icon.png" style="width: 18px;">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Personal Website</p>
+
+              <a href="https://www.shuo.science/" class="contact-link">www.shuo.science</a>
+            </div>
+
+          </li>
+
+
+        </ul>
+
+        <div class="separator"></div>
+
+          <ul class="social-list">
+
+            <li class="social-item">
+              <a href="/" class="social-link">
+                <!-- You might need a custom icon or image for Google Scholar as ion-icon may not have a specific one for it. -->
+                <img src="assets/images/logo.png" alt="shuo.science" style="width: 20px;">
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://scholar.google.ch/citations?user=1qq4l9IAAAAJ&hl=en" class="social-link" target="_blank">
+                <!-- You might need a custom icon or image for Google Scholar as ion-icon may not have a specific one for it. -->
+                <img src="assets/images/google_scholar_icon_Golden.png" alt="Google Scholar" style="width: 19px;">
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/mengshuo-jia-340272257/" class="social-link" target="_blank">
+                <img src="assets/images/Linkedin_icon.png" alt="Linkedin" style="width: 20px;">
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://ieeexplore.ieee.org/author/37086556943" class="social-link" target="_blank">
+                <!-- Again, you might need a custom icon or image for IEEE. -->
+                <img src="assets/images/IEEE_icon_Golden.png" alt="IEEE" style="width: 24px;">
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.researchgate.net/profile/Mengshuo-Jia" class="social-link" target="_blank">
+                <!-- And a custom icon or image for ResearchGate. -->
+                <img src="assets/images/RG_icon.png" alt="Researchgate" style="width: 20px;">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/daline.html" class="navbar-link">
+                <img src="assets/images/DalineLogo.png" alt="Daline" style="width: 30px;">
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link="about">About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="get started">Get Started</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="downloads">Downloads</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="documentation">Documentation</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="license">License</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="github">Github</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <!-- <header>
+          <h2 class="h2 article-title"> About   </h2>
+        </header> -->
+
+
+        <section class="about-text">
+
+           
+            
+            <!-- <img src="assets/images/Daline-NoMargin.png" alt="Icon" width="20" height="20"> -->
+            <p style="text-align: center;"> <br>  <br> <span class="dalinehead"> DALINE</span> <br>  <span class="largesize">Get Data. Find Methods. Linearize Models. <br> Code Less. Make More. Save Time. </span> <br><br> <span class="smallsize golden"> Free to use. Quick to deploy. Easy to code. Efficient to run. <br> <span class="dalineinline">Daline</span>  can help with data-driven power flow linearization and more. </span> </p> 
+
+            <!-- class="golden" -->
+            <!-- Elegant to code. Efficient to run -->
+
+            <div class="half-line-break"></div>
+
+            <div class="button-container">
+                <a href="#" class="start-button" onclick="navigateTo('get started')">
+                  <span>Start now ↗</span>
+                </a>
+              </div>
+
+            
+              <div class="half-line-break"></div>
+              <div class="half-line-break"></div>
+
+            
+            <div class="panel">
+                <div class="row row-left">
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'noise.SNR_dB'</span>, 45)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">noise</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">outlier</span>(<span class="variable">data</span>, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'outlier.percentage'</span>, 2.5)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">denoise</span>(<span class="variable">data</span>, <span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'filNoi.useARModel'</span>, false, <span class="string">'filNoi.zeroInitial'</span>, 0)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">deoutlier</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">normalize</span>(<span class="variable">data</span>, <span class="string">'norm.switch'</span>, 1)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'num.trainSample'</span>, 500, <span class="string">'num.testSample'</span>, 300)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>}, <span class="string">'PLOT.repeat'</span>, 5, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">method</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.program'</span>, <span class="string">'acpf'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
+                  </div>
+                </div>
+                <div class="row row-right">
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_HBLE'</span>, <span class="string">'HBL.language'</span>, <span class="string">'yalmip'</span>, <span class="string">'HBL.solver'</span>, <span class="string">'quadprog'</span>, <span class="string">'HBL.programType'</span>, <span class="string">'whole'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_LIFX'</span>, <span class="string">'variable.liftType'</span>, <span class="string">'polyharmonic'</span>, <span class="string">'variable.liftK'</span>, 2)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_WEI'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'DRC_XYM'</span>, <span class="string">'DRC.probThreshold'</span>, 90, <span class="string">'DRC.gamma2'</span>, 0.5, <span class="string">'DRC.language'</span>, <span class="string">'cvx'</span>, <span class="string">'DRC.solverM'</span>, <span class="string">'Mosek'</span>, <span class="string">'DRC.programType'</span>, <span class="string">'whole'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REC'</span>, <span class="string">'LSR.recursivePercentage'</span>, 30, <span class="string">'LSR.initializeP'</span>, 0)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REP'</span>, <span class="string">'LSR.recursivePercentage'</span>, 75)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'DLPF_C'</span>, <span class="string">'RR'</span>, <span class="string">'PLS_REC'</span>}, <span class="string">'RR.lambdaInterval'</span>, 1e-5, <span class="string">'RR.cvNumFold'</span>, 4, <span class="string">'PLS.recursivePercentage'</span>, 40)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_HBLE'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_LIFX'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_WEI'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">dataN</span>, <span class="string">'method.name'</span>, <span class="string">'DRC_XYM'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REC'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REP'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'DLPF_C'</span>, <span class="string">'RR'</span>, <span class="string">'PLS_REC'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>, <span class="string">'Vm'</span>})</code></pre>
+                  </div>
+                </div>
+                <div class="row row-left">
+                  <div class="block">
+                    <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">methods</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">methods</span>, <span class="string">'PLOT.response'</span>, {<span class="string">'Vm'</span>, <span class="string">'PF'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'TAY'</span>, <span class="string">'QR'</span>}, <span class="string">'PLOT.theme'</span>, <span class="string">'commercial'</span>, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code>daline.<span class="field">time</span>(<span class="variable">data</span>, <span class="variable">methods</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code>daline.<span class="field">time</span>(<span class="variable">datalist</span>, <span class="variable">methods</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>, <span class="string">'Vm'</span>}, <span class="string">'PLOT.repeat'</span>, 5, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, <span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">method</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'noise.switchTrain'</span>, 1, <span class="string">'noise.switchTest'</span>, 1, <span class="string">'noise.SNR_dB'</span>, 45)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">noise</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">outlier</span>(<span class="variable">data</span>, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'outlier.percentage'</span>, 2.5)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">denoise</span>(<span class="variable">data</span>, <span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false, <span class="string">'filNoi.zeroInitial'</span>, 0)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">deoutlier</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">normalize</span>(<span class="variable">data</span>, <span class="string">'norm.switch'</span>, 1)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'num.trainSample'</span>, 500, <span class="string">'num.testSample'</span>, 300, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>, <span class="string">'noise.switchTrain'</span>, 1, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'norm.switch'</span>, 1)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'case.name'</span>, <span class="string">'case57'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>); <span class="variable">data</span> = daline.<span class="field">data</span>(<span class="variable">opt</span>)</code></pre>
+                  </div>
+                  <div class="block">
+                    <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'data.baseType'</span>, <span class="string">'Random'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                  </div>
+                </div>
+              </div>
+              
+
+            
+
+            <p style="text-align: center;"> <br> <br> <br> <span class="largesize-small"> Compare, rank, and visualize accuracy <br> of over 55 linearization methods using one code <br>  </span> </p>   
+
+            <div class="image-container">
+                <img src="/assets/images/daline-fig1-distribution.png" alt="Description of the image" width="1000">
+            </div>
+            
+
+            <p style="text-align: center;"> <br> <br> <br> <span class="largesize-small"> Get an overall accuracy ranking for any states of over <br> 55 linearization methods using one code  </span> <br>  </p>   
+
+            <div class="image-container">
+                <img src="/assets/images/daline-fig2-ranking-Vm.png" alt="Description of the image" width="1000">
+            </div>
+
+            <!-- <p style="text-align: center;"> <br> <br> <br> <span class="largesize-small"> Get a quantified accuracy ranking w.r.t. branch flows of over <br> 55 linearization methods using one code  </span> </p>   
+
+            <div class="image-container">
+                <img src="/assets/images/daline-fig3-ranking-PF.png" alt="Description of the image" width="1000">
+            </div> -->
+
+            <p style="text-align: center;"> <br> <br> <br> <span class="largesize-small"> Compare, rank, and visualize computational efficiency <br> of over 55 linearization methods using one code <br>  </span> </p>   
+
+            <div class="image-container">
+                <img src="/assets/images/daline-fig4-ranking-time.png" alt="Description of the image" width="1200">
+            </div>
+
+            <p style="text-align: center;"> <br> <br> <br> <span class="largesize-small"> Compare, rank, and visualize computational scalability curves <br> of over 55 linearization methods using one code <br>  </span> </p>   
+
+            <div class="image-container">
+                <img src="/assets/images/daline-fig5-ranking-scalability.png" alt="Description of the image" width="1000">
+            </div>
+
+            <p style="text-align: center;"> <br> <br> <br> <span class="largesize-small"> Generate, pollute, clean, and normalize (optimal) power flow data  with   dozens of customization options in one code  <br> </span> </p>   
+              
+            <div class="image-container">
+                <img src="/assets/images/daline-fig0-fluctuation.png" alt="Description of the image" width="1000">
+            </div>
+
+              
+        
+          <!-- <p>
+            I am passionate about AI-powered power system identification and optimization, aiming for a secure, low-carbon, economic, and autonomous power grid integrated with renewable energy. My work focuses on fundamental and altruistic research, i.e., proposes basic theories and toolboxes to facilitate better scientific exploration within the academic community and bring benefits to the industry as well. To know more about me, please click the <a href="https://www.shuo.science/" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">Bio</a> button or <a href="cv.pdf" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">download my cv</a>.
+          </p> -->
+
+        </section>
+
+        <section class="testimonials">
+
+            <!-- <h3 class="h3 service-title"><a class="golden">Feature</a></h3> -->
+  
+            <ul class="service-list">
+            <!-- <ul class="testimonials-list has-scrollbar">    -->
+  
+              <li class="service-item">
+                <!-- <li class="testimonials-item"> -->
+    
+                  <div class="service-icon-box">
+                    <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
+                  </div>
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Latest Advancements</h4>
+    
+                    <p class="service-item-text">
+                        Provides users with access to the <a class="golden">latest advancements in power flow linearization</a>, enabling rapid model acquisition and flexible customization and extension of accurate and computationally efficient approaches. 
+                    </p>
+                  </div>
+    
+                </li>
+  
+                <li class="service-item">
+                    <!-- <li class="testimonials-item"> -->
+        
+                      <div class="service-icon-box">
+                        <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
+                      </div>
+        
+                      <div class="service-content-box">
+                        <h4 class="h4 service-item-title">High Flexibility</h4>
+        
+                        <p class="service-item-text">
+                            With an user-friendly architecture that supports over <a class="golden">300 adjustable parameters and options</a>, offering extensive flexibility to meet diverse research and educational needs. 
+                        </p>
+                      </div>
+        
+                    </li>
+
+                    <li class="service-item">
+                        <!-- <li class="testimonials-item"> -->
+            
+                          <div class="service-icon-box">
+                            <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
+                          </div>
+            
+                          <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Minimal Coding</h4>
+            
+                            <p class="service-item-text">
+                                Crafted for simplicity, enabling users to accomplish complex tasks with <a class="golden">minimal coding</a>, often requiring just <a class="golden">one or two lines of code</a>.
+                            </p>
+                          </div>
+            
+                        </li>
+  
+            </ul>
+
+        </section>
+          
+        <!--
+          - service
+        -->
+
+        <!-- <section class="service"> -->
+        
+
+
+        <!--         
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Selected Works</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Daline.png" alt="Linearity" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daline®</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <a href="https://github.com/JarvisETHZ/DPFL-Master">
+    
+                    <h3 class="project-title">Daline®: data-driven power flow linearization tools for power systems research and education</h3>
+    
+                    <p class="project-category">Mengshuo Jia, Gabriela Hug</p>
+    
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Tutorial1.png" alt="Linearity" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tutorial</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606654">
+    
+                    <h3 class="project-title">Tutorial on Data-driven Power Flow Linearization - Part I</h3>
+    
+                    <p class="project-category">Mengshuo Jia, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang</p>
+    
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Tutorial2.png" alt="Linearity" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tutorial</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606656">
+    
+                    <h3 class="project-title">Tutorial on Data-driven Power Flow Linearization - Part II</h3>
+    
+                    <p class="project-category">Mengshuo Jia, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang</p>
+    
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Iterative.png" alt="Optimal Power Flow" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>OPF</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <a href="https://ieeexplore.ieee.org/document/9400744">
+    
+                    <h3 class="project-title">Iterative Decomposition of Joint Chance Constraints in OPF</h3>
+    
+                    <p class="project-category">Mengshuo Jia, Gabriela Hug, Chen Shen</p>
+    
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Distributed Clustering.png" alt="Optimal Power Flow" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Privacy</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <a href="https://ieeexplore.ieee.org/document/9223745">
+    
+                    <h3 class="project-title">Privacy-preserving Distributed Clustering for Electrical Load Profiling</h3>
+    
+                    <p class="project-category">Mengshuo Jia, Yi Wang, Chen Shen, Gabriela Hug</p>
+    
+                  </a>
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+          <section class="about-text">
+            <small>
+            <p class="centered-text">
+              To see more of my works, please <a style="display: inline; color: var(--orange-yellow-crayola);">scroll right</a> or click the <a style="display: inline; color: var(--orange-yellow-crayola);">Research</a> button at the navigation bar.
+            </p>
+          </small>
+          </section>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2023-04-06">06 April, 2023</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Sponsors</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.snf.ch/en">
+                <img src="./assets/images/SNF_logo.png" alt="client logo" style="width: 140px;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://nccr-automation.ch/">
+                <img src="./assets/images/NCCR_logo.png" alt="client logo" style="width: 140px;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://ethz.ch/en.html">
+                <img src="./assets/images/eth_logo_kurz_neg.png" alt="client logo" style="width: 110px;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.tsinghua.edu.cn/en/">
+                <img src="./assets/images/Tsinghua.png" alt="client logo" style="width: 90px;">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="bio" data-page="get started">
+
+        <!-- <header>
+          <h2 class="h2 article-title"><br></h2>
+        </header> -->
+
+        
+        <!-- <h2 class="h2 article-title"><br></h2> -->
+
+        <p> <br> </p>
+        <p> <br> </p>
+        <p> <br> </p>
+        <!-- <p> <br> </p> -->
+
+        <section class="about-text" style="margin-bottom: -10px;">
+
+
+            <!-- <h2 class="h3 article-title"> <br>Introduction </h2> -->
+            <!-- <h3 class="h3"><br>Introduction </h3> -->
+
+            <p>
+                <br>
+                <span class="dalineinline">Daline</span> is a data-driven power flow linearization toolbox designed for power systems researchers, educators, and engineers. This free, open-source package consists of MATLAB-language M-files, featuring <a class="golden">57</a> linearization methods, including <a class="golden">53</a> data-driven methods and <a class="golden">4</a> commonly used physics-driven methods. <span class="dalineinline">Daline</span>  offers support for:
+            </p>
+            
+            <ul class="centered-list" style="margin-bottom: -10px;">
+                <li>• Data Generation </li>
+                <li>• Data Processing (pollution, cleaning, and normalization)</li> <!--   -->
+                <li>• Method Selection </li>
+                <li>• Method Customization </li>
+                <li>• Model Linearization </li>
+                <li>• Method Evaluation </li>
+                <li>• Result Visualization </li>
+            </ul>
+
+        </section>
+
+
+        <section class="timeline" style="margin-top: -10px;">
+          <div class="title-wrapper">
+            <h3 class="h3"><br> <br> Setup <span class="dalineinline">Daline</span>  </h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Step 1: Download <span class="dalineinline">Daline</span> </h4>
+
+              <p class="timeline-text">
+                Click <a href="cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2.zip'});">daline1.1.2.zip</a> to download the latest release version, and extract the downloaded ZIP file anywhere you like.
+            </p>
+
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Step 2: Install <span class="dalineinline">Daline</span> </h4>
+
+              <!-- <span></span> -->
+
+              <p class="timeline-text">
+                Start MATLAB and change your working directory to the <span class="dalineinline">Daline</span>  directory you just extracted (the one containing daline_setup.m). <span class="dalineinline">Daline</span>  will be installed by typing the following command in the MATLAB command window: 
+              </p>
+
+              <pre class="code-block"><code><span class="field"> daline_setup</span></code></pre>
+
+              <!-- <span></span> -->
+
+              <p class="timeline-text">
+                The above command will install <span class="dalineinline">Daline</span>  with a quick test of its major functionality. If you want to install <span class="dalineinline">Daline</span>  while testing all its functionality, type the following command:
+              </p>
+
+              <pre class="code-block"><code><span class="field"> daline_setup</span>(<span class="string">'full'</span>)</code></pre>
+
+              <!-- <p class="timeline-text">
+                Join <a href="https://nccr-automation.ch/about/people/mengshuo-jia" style="display: inline; color: var(--orange-yellow-crayola);">NCCR Automation</a> and work on one of the most fundamental topics in the energy domain, i.e.,  linearity in energy systems. 
+              </p> -->
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Step 3: Enjoy</h4>
+
+              <!-- <span></span> -->
+
+              <p class="timeline-text">
+                There is no step 3, but you can now choose to verify all the functionality of <span class="dalineinline">Daline</span>  by typing:
+              </p>
+
+              <pre class="code-block"><code><span class="field"> daline_test</span><span class="comment">  </span>  </code></pre>
+              <p class="timeline-text">
+                Or to verify any specific built-in linearization methods, e.g., 'PLS_REC' and 'RR_KPC', in <span class="dalineinline">Daline</span>  by typing:
+              </p>
+              <pre class="code-block"><code><span class="field"> daline_test</span>({<span class="string">'PLS_REC'</span>; <span class="string">'RR_KPC'</span>}) <span class="comment">  </span></code></pre>
+              <p class="timeline-text">
+                And, if you find <span class="dalineinline">Daline</span> helpful for your work, please remember to cite the following reference!</p>
+              <pre class="code-block"><code>@article{Daline,<br>  author={Jia, Mengshuo and Chan, Wen Yi and Hug, Gabriela},<br>  title={Daline: A Data-driven Power Flow Linearization Toolbox for Power Systems Research and Education},<br>  year={2024},<br>}</code></pre> 
+              
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+            <div class="title-wrapper">
+              <h3 class="h3">Run <span class="dalineinline">Daline</span> </h3>
+            </div>
+          
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Quickly get a linear model</h4>
+                <p class="timeline-text">
+                  To train a linear power flow model for the standard IEEE-118 case using the default linearization method and options, type:
+                </p>
+                <pre class="code-block"><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>)</code></pre>
+                <p class="timeline-text">
+                  There are over 300 options/parameters to customize the behavior of the wrapper daline.all, e.g.,
+                </p>
+                <pre class="code-block"><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'data.baseType'</span>, <span class="string">'Random'</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>);</code></pre>
+                <p class="timeline-text">
+                  Or
+                </p>
+                <pre class="code-block"><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.baseType'</span>, <span class="string">'Random'</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>);<br><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="variable">opt</span>);</code></pre>
+                <p class="timeline-text">
+                  The wrappers in the following examples also offer numerous options and parameters that can be adjusted using name-value pairs. These examples demonstrate only a small selection of these options to provide an easy starting point.
+                </p>
+              </li>
+          
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Generate data</h4>
+                <p class="timeline-text">
+                  To generate artificial power flow data for a user-owned MPC-structured power system using a time series loading curve, type:
+                </p>
+                <pre class="code-block"><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.mpc'</span>, <span class="variable">mpc_user</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
+                <p class="timeline-text">
+                  There are more than 45 options available for customizing data generation. 
+                </p>
+              </li>
+          
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Train & test linear model</h4>
+                <p class="timeline-text">
+                  To train a linear power flow model using an existing dataset with ridge regression and k-plane clustering:
+                </p>
+                <pre class="code-block"><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'RR_KPC'</span>)</code></pre>
+              </li>
+          
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Customize linearization methods</h4>
+                <p class="timeline-text">
+                  To customize ridge regression with k-plane clustering, for example by enabling the auto-tuning of the regularization factor in this method:
+                </p>
+                <pre class="code-block"><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'RR_KPC'</span>, <span class="string">'RR.lambdaInterval'</span>, <span class="string">[0:1e-3:0.02]</span>)</code></pre>
+                <p class="timeline-text">
+                  Ridge regression with k-plane clustering has 9 hyperparameters/options for customization in <span class="dalineinline">Daline</span>. 
+                </p>
+              </li>
+          
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Accuracy Comparison & Visualization</h4>
+                <p class="timeline-text">
+                  To compare and visualize the linearization error distributions of various data-driven and physics-driven approaches:
+                </p>
+                <pre class="code-block"><code><span class="variable">models</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'PLS_SIM'</span>, <span class="string">'RR'</span>, <span class="string">'LS_COD'</span>, <span class="string">'DC'</span>, <span class="string">'TAY'</span>});</code></pre>
+                <p class="timeline-text">
+                  The comparison settings and the parameters for the methods can all be adjusted using daline.rank.
+                </p>
+              </li>
+          
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Efficiency Comparison & Visualization</h4>
+                <p class="timeline-text">
+                  To compare and visualize the computational efficiency of various data-driven and physics-driven approaches:
+                </p>
+                <pre class="code-block"><code><span class="variable">time</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'PLS_SIM'</span>, <span class="string">'RR'</span>, <span class="string">'LS_COD'</span>, <span class="string">'DC'</span>, <span class="string">'TAY'</span>} , <span class="string">'PLOT.repeat'</span>, 5);</code></pre>
+                <p class="timeline-text">
+                  The comparison settings and the parameters for the methods can all be adjusted using daline.time.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          
+
+
+        <section class="about-text">
+          <br>
+          <p class="centered-text">
+          <small>
+            More can be found in the <a href="cv.pdf" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">user's manual</a>.
+          </small>
+          </p>
+        </section>
+
+        <!-- <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+    
+
+      <!--
+        - #News
+      -->
+
+
+      
+
+      <article class="news" data-page="downloads">
+
+        <!-- <header>
+          <h2 class="h2 article-title"><br></h2>
+        </header> -->
+
+        <!-- <h3 class="h2 article-title"><br></h3> -->
+
+        <p> <br> </p>
+        <p> <br> </p>
+        <p> <br> </p>
+        <p> <br> </p>
+        <p> <br> </p>
+        <!-- <p> <br> </p> -->
+        <!--
+          - service
+        -->
+        <section class="service">
+
+          
+
+          <ul class="service-list">
+
+            <li class="service-item"> 
+
+              <!-- <div class="service-icon-box">
+                <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+              </div> -->
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">Important Notice</h4>
+
+                <p class="service-item-text">
+                  1. <span class="dalineinline">Daline</span> is free of charge to use and is openly distributed. </p>
+                  <div class="half-line-break"></div>
+                  <p class="service-item-text">  
+                  2. <span class="dalineinline">Daline</span> is distributed under the 3-Clause BSD License.  </p>
+                  <div class="half-line-break"></div>
+                  <p class="service-item-text">  
+                  2. The copyright of <span class="dalineinline">Daline</span> is owned by <a href="https://www.shuo.science/" style="display: inline; color: var(--orange-yellow-crayola); text-decoration: underline;">Mengshuo Jia</a> and <a href="https://psl.ee.ethz.ch/people/prof--gabriela-hug.html" style="display: inline; color: var(--orange-yellow-crayola); text-decoration: underline;">Gabriela Hug</a> with all rights reserved.  </p>
+                  <div class="half-line-break"></div>
+                  <p class="service-item-text">  
+                  2. <span class="dalineinline">Daline</span> must be cited via the following reference when used in a published work.  </p>
+                  <pre class="code-block"><code>@article{Daline,<br>  author={Jia, Mengshuo and Chan, Wen Yi and Hug, Gabriela},<br>  title={Daline: A Data-driven Power Flow Linearization Toolbox for Power Systems Research and Education},<br>  year={2024},<br>}</code></pre> 
+                
+              </div>
+
+            </li>
+
+
+          </ul>
+
+          <p> <br> </p>
+          <p> <br> </p>
+
+        <div class="container">
+            <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">Release</h4>
+
+            <p> <br> </p>
+            
+            <div class="current-version">
+              <p>Current Release Version: <a href="cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2.zip'});">daline1.1.2.zip</a> — released May 31, 2024</p>
+          </div>
+      
+          <div class="older-versions">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Release Version</th>
+                          <th>Filename</th>
+                          <th>Release Date</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1.1.2</td>
+                          <td><a href="path/to/cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2 (May 31, 2024)'});">daline1.1.2.zip (32.28 MB)</a></td>
+                          <td>May 31, 2024</td>
+                      </tr>
+                      <tr>
+                          <td>1.1.1</td>
+                          <td><a href="path/to/cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.1 (January 1, 2024)'});">daline1.1.1.zip (31.32 MB)</a></td>
+                          <td>January 1, 2024</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          </div>
+
+        
+
+        </section>
+
+        <!-- <section class="about-text">
+          <br>
+          <p class="centered-text">
+            More previous news will be posted soon! You can check <a href="cv.pdf" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">my cv</a> first if you do not want to wait :)
+          </p>
+
+        </section> -->
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+  
+
+
+
+      <article class="research" data-page="documentation">
+
+        <!-- <header>
+          <h2 class="h2 article-title">Research</h2>
+        </header> -->
+
+        <p> <br> </p>
+        <p> <br> </p>
+        <p> <br> </p>
+        <p> <br> </p>
+        <p> <br> </p>
+        <!-- <p> <br> </p> -->
+ 
+        
+        
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Manual</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Journal</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Conference</button>
+            </li>
+
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Manual</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Journal</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Conference</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="manual">
+              <a href="cv.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Daline.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: var(--orange-yellow-crayola);">User's Manual for Daline 1.1.2</h3>
+
+                <p class="project-category">Manual</p>
+
+                <h5 class="project-title">
+                  <span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Wen Yi Chan, Gabriela Hug
+                </h5>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="journal">
+                <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606654">
+  
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+  
+                    <img src="./assets/images/Tutorial1.png" alt="finance" loading="lazy">
+                  </figure>
+  
+                  <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Daline: A Data-driven Power Flow Linearization Toolbox for Power Systems Research and Education</h3>
+  
+                  <p class="project-category">Submitted</p>
+  
+                  <h5 class="project-title"><span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Wen Yi Chan, Gabriela Hug</h5>
+  
+                </a>
+              </li>
+
+            <li class="project-item  active" data-filter-item data-category="journal">
+              <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606654">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Tutorial1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Data-driven Power Flow Linearization: Theory</h3>
+
+                <p class="project-category">Submitted</p>
+
+                <h5 class="project-title"><span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang, Chongqing Kang</h5>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="journal">
+              <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606656">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Tutorial2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Data-driven Power Flow Linearization: Simulation</h3>
+
+                <p class="project-category">Submitted</p>
+
+                <h5 class="project-title"><span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang, Chongqing Kang</h5>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="conference">
+                <a href="https://ieeexplore.ieee.org/document/10202779">
+  
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+  
+                    <img src="./assets/images/DPFL Overview.png" alt="orizon" loading="lazy">
+                  </figure>
+  
+                  <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Overview of Data-driven Power Flow Linearization</h3>
+  
+                  <p class="project-category">IEEE PowerTech Conference 2023</p>
+  
+                  <h5 class="project-title">
+                    <span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Gabriela Hug
+                  </h5>
+  
+                </a>
+              </li>
+
+
+            
+
+            
+
+
+          </ul>
+
+        </section>
+
+        <section class="about-text">
+          <br>
+          <p class="centered-text">
+          <small>
+            Images are generated by Generative AI and may contain typos.
+          </small>
+          </p>
+
+        </section>
+
+      </article>
+
+
+
+      <article class="award" data-page="license">
+
+        <!-- <header>
+          <h2 class="h2 article-title">Awards</h2>
+        </header> -->
+
+
+        <!--
+          - service
+        -->
+
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <!-- <p><br></p> -->
+
+        <section class="service">
+
+           
+    
+              <ul class="service-list">
+    
+                <li class="service-item">
+    
+                  <!-- <div class="service-icon-box">
+                    <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+                  </div> -->
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">License</h4>
+
+                    <p><br></p>
+    
+                    <p class="service-item-text">
+                        Starting from version 1.1.2, <span class="dalineinline">Daline</span> is distributed under the 3-Clause BSD License. Copyright (c) 2024. Primary Developers to Daline. All rights reserved.</p>
+
+                       
+                    <p><br></p>
+                    <p class="service-item-text">  
+
+                        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+                        
+                        <br>
+                        <br>
+                        1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+                        
+                        <br>
+                        <br>
+                        2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+                        
+                        <br>
+                        <br>
+                        3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+                        <br>
+                        <br>
+                        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+                    </p>
+                  </div>
+    
+                </li>
+    
+
+              <p><br></p>
+              <!-- <p><br></p> -->
+    
+              </ul>
+
+              <ul class="service-list">
+    
+                <li class="service-item">
+    
+                  <!-- <div class="service-icon-box">
+                    <img src="./assets/images/news_icon.png" alt="design icon" width="40">
+                  </div> -->
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">Important Notice</h4>
+
+                    <p><br></p>
+    
+                    <p class="service-item-text">
+                        The data generation functionality of <span class="dalineinline">Daline</span>  is built on <a href="https://matpower.org/" style="display: inline; color: #ffffff; text-decoration: underline;">MATPOWER</a>, and the built-in optimization methods of <span class="dalineinline">Daline</span>  utilize toolboxes <a href="https://cvxr.com/cvx/" style="display: inline; color: #ffffff; text-decoration: underline;">CVX</a> and <a href="https://yalmip.github.io/" style="display: inline; color: #ffffff; text-decoration: underline;">YALMIP</a>. To minimize installation and setup costs, <span class="dalineinline">Daline</span>  includes redistributed versions of these toolboxes, in strict compliance with their redistribution licenses. License files for these toolboxes are also included in <span class="dalineinline">Daline</span> . Therefore, if users redistribute <span class="dalineinline">Daline</span> , they must adhere not only to <span class="dalineinline">Daline</span>’s license but also to the licenses of these included toolboxes.
+                    </p>
+                  </div>
+    
+                </li>
+    
+    
+              </ul>
+    
+            </section>
+
+        
+
+
+      </article>
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="github">
+
+        <!-- <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header> -->
+
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <!-- <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section> -->
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    function navigateTo(page) {
+      // Hide all articles
+      document.querySelectorAll('article').forEach(article => {
+        article.classList.remove('active');
+      });
+      // Show the target article
+      document.querySelector(`article[data-page="${page}"]`).classList.add('active');
+  
+      // Update the active state of the navigation links
+      document.querySelectorAll('.navbar-link').forEach(link => {
+        link.classList.remove('active');
+      });
+      document.querySelector(`.navbar-link[data-nav-link="${page}"]`).classList.add('active');
+    }
+  
+    document.querySelectorAll('.navbar-link').forEach(button => {
+      button.addEventListener('click', function() {
+        const targetPage = this.getAttribute('data-nav-link');
+        navigateTo(targetPage);
+      });
+    });
+  </script>
+
+</body>
+
+</html>

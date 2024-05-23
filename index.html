@@ -6,6 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mengshuo Jia</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZR7679P0L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RZR7679P0L');
+  </script>
 
   <!--
     - favicon
@@ -52,7 +61,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Dr. Mengshuo Jia" width="80">
+          <img src="./assets/images/my-avatar-shade.png" alt="Dr. Mengshuo Jia" width="80">
         </figure>
 
         <div class="info-content">
@@ -228,8 +237,18 @@
             <button class="navbar-link" data-nav-link>Blog</button>
           </li> -->
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
+
+          <!-- <li class="navbar-item">
+            <a href="/daline.html" class="navbar-link">Daline</a>
+          </li> -->
+
+          <li class="navbar-item">
+            <a href="/daline.html" class="navbar-link">
+              <img src="assets/images/DalineLogo.png" alt="Daline" style="width: 30px;">
+            </a>
           </li>
 
         </ul>
@@ -1400,7 +1419,7 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="toolbox">
-              <a href="https://github.com/JarvisETHZ/DPFL-Master">
+              <a>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1410,19 +1429,19 @@
                   <img src="./assets/images/Daline.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Daline®: data-driven power flow linearization tools for power systems research and education</h3>
+                <h3 class="project-title" style="color: var(--orange-yellow-crayola);">User's Manual for Daline 1.1.2</h3>
 
-                <p class="project-category">Toolbox</p>
+                <p class="project-category">Manual</p>
 
                 <h5 class="project-title">
-                  <span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Gabriela Hug
+                  <span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Wen Yi Chan, Gabriela Hug
                 </h5>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="preprint">
-              <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606654">
+            <li class="project-item  active" data-filter-item data-category="toolbox">
+              <a>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1432,34 +1451,54 @@
                   <img src="./assets/images/Tutorial1.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Tutorial on Data-driven Power Flow Linearization - Part I: Challenges and Training Algorithms</h3>
+                <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Daline: A Data-driven Power Flow Linearization Toolbox for Power Systems Research and Education</h3>
 
-                <p class="project-category">Submitted to Proceedings of IEEE</p>
+                <p class="project-category">Submitted</p>
 
-                <h5 class="project-title"><span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang</h5>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="preprint">
-              <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606656">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Tutorial2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Tutorial on Data-driven Power Flow Linearization - Part II: Supportive Techniques and Experiments</h3>
-
-                <p class="project-category">Submitted to Proceedings of IEEE</p>
-
-                <h5 class="project-title"><span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang</h5>
+                <h5 class="project-title"><span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Wen Yi Chan, Gabriela Hug</h5>
 
               </a>
             </li>
+
+          <li class="project-item  active" data-filter-item data-category="preprint">
+            <a>
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/Tutorial1.png" alt="finance" loading="lazy">
+              </figure>
+
+              <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Data-driven Power Flow Linearization: Theory</h3>
+
+              <p class="project-category">Submitted</p>
+
+              <h5 class="project-title"><span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang, Chongqing Kang</h5>
+
+            </a>
+          </li>
+
+          <li class="project-item  active" data-filter-item data-category="preprint">
+            <a>
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/Tutorial2.png" alt="orizon" loading="lazy">
+              </figure>
+
+              <h3 class="project-title" style="color: var(--orange-yellow-crayola);">Data-driven Power Flow Linearization: Simulation</h3>
+
+              <p class="project-category">Submitted</p>
+
+              <h5 class="project-title"><span style="display: inline; color: var(--orange-yellow-crayola);">Mengshuo Jia</span>, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang, Chongqing Kang</h5>
+
+            </a>
+          </li>
 
             <li class="project-item  active" data-filter-item data-category="ieee transactions">
               <a href="https://ieeexplore.ieee.org/document/9400744">
