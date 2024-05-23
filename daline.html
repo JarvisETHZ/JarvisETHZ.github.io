@@ -43,78 +43,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  
-
   <style>
-    body {
+  .body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* height: 100vh; */
     background-color: #121212;
     color: white;
-    /* margin: 0; */
-    /* overflow: hidden; */
-    /* font-family: Arial, sans-serif; */
     }
-
-    .panel {
-        width: 100%; /* Adjust this to the desired width */
-        overflow: hidden;
-        position: relative;
-        background-color: var(--eerie-black-2);
-        padding: 5px;
-        border-radius: 10px;
-    }
-
-    .row {
-        display: flex;
-        width: 200%; /* Double the viewport width to ensure continuous flow */
-        white-space: nowrap;
-        position: relative;
-    }
-
-    .row-left {
-        animation: flow-left 60s linear infinite;
-    }
-
-    .row-right {
-        animation: flow-right 60s linear infinite;
-        transform: translateX(-25%); /* Start the view from the middle of the row */
-    }
-
-    .block {
-        display: inline-block;
-        background-color: var(--eerie-black-2);
-        border: 1px solid #333;
-        border-radius: 10px;
-        padding: 12px;
-        margin: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        font-size: 14px;
-        text-align: center;
-        flex-shrink: 0; /* Prevent blocks from shrinking too much */
-    }
-
-    @keyframes flow-left {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
-    }
-
-    @keyframes flow-right {
-        0% {
-            transform: translateX(-25%);
-        }
-        100% {
-            transform: translateX(0%);
-        }
-    }
-    .dalinehead {
+  .dalinehead {
       font-family: "Times New Roman", Times, serif;
       font-variant: small-caps;
       font-weight: bold;
@@ -125,42 +63,15 @@
       margin-bottom: 1px; /* Adjust the value to set the desired distance below */
       /* display: inline; */
     }
-    .dalinehead::first-letter {
+  .dalinehead::first-letter {
       font-size: 1.5em; /* Make the first letter larger */
       vertical-align: baseline; /* Align the larger letter properly */
     }
-    .dalinehead img {
+  .dalinehead img {
       vertical-align: middle;
       margin-right: 5px; /* Adjust spacing between image and text if necessary */
     }
-    .dalineheadsmall {
-      font-family: "Times New Roman", Times, serif;
-      font-variant: small-caps;
-      font-weight: bold;
-      color: var(--orange-yellow-crayola); /* Adjust the color if needed */
-      line-height: 1.5; /* Adjust line-height to prevent breaks */
-    }
-    .dalineheadsmall::first-letter {
-      font-size: 1.5em; /* Make the first letter larger */
-      vertical-align: baseline; /* Align the larger letter properly */
-    }
-    .dalineinline {
-      font-family: "Times New Roman", Times, serif;
-      font-variant: small-caps;
-      font-weight: bold;
-      color: #ffffff !important;
-      display: inline; /* Ensure it remains inline */
-      line-height: 1.5; /* Adjust line-height to prevent breaks */
-    }
-    .dalineinline::first-letter {
-      font-size: 3em; /* Make the first letter larger */
-      vertical-align: baseline; /* Align the larger letter properly */
-    }
-    .golden {
-        display: inline;
-        color: var(--orange-yellow-crayola);
-    }
-    .largesize {
+  .largesize {
       font-size: 2.5em; 
       /* font-weight: bold; */
       color: #ffffff; /* Adjust the color if needed */
@@ -169,16 +80,11 @@
       margin-top: 10px; /* Adjust the value to set the desired distance */
       margin-bottom: 10px; /* Adjust the value to set the desired distance below */
     }
-    .largesize-small {
-      font-size: 2em; 
-      /* font-weight: bold; */
-      color: #ffffff; /* Adjust the color if needed */
-      display: inline; /* Ensure it remains inline */
-      line-height: 1; /* Adjust line-height to prevent breaks */
-      margin-top: 10px; /* Adjust the value to set the desired distance */
-      margin-bottom: 10px; /* Adjust the value to set the desired distance below */
+  .golden {
+        display: inline;
+        color: var(--orange-yellow-crayola);
     }
-    .smallsize {
+  .smallsize {
       font-size: 1.1em; 
       /* font-weight: bold; */
       color: #ffffff; /* Adjust the color if needed */
@@ -187,22 +93,28 @@
       margin-top: 10px; /* Adjust the value to set the desired distance */
       margin-bottom: 4px; /* Adjust the value to set the desired distance below */
     }
-    /* .centered-list {
-            list-style-position: inside;
-            text-align: center;
-            margin: 0 auto;
-            padding: 0;
-            width: fit-content;
-        } */
-    .centered-list li {
-        padding-left: 2px; /* Adjust the value as needed */
+  .dalineinline {
+      font-family: "Times New Roman", Times, serif;
+      font-variant: small-caps;
+      font-weight: bold;
+      color: #ffffff !important;
+      display: inline; /* Ensure it remains inline */
+      line-height: 1.5; /* Adjust line-height to prevent breaks */
     }
-    .half-line-break {
+  .dalineinline::first-letter {
+      font-size: 3em; /* Make the first letter larger */
+      vertical-align: baseline; /* Align the larger letter properly */
+    }
+  .half-line-break {
             display: block;
             height: 0.5em; /* Adjust the value to be half of the line height */
             content: "";
     }
-    .start-button {
+  .button-container {
+          text-align: center; /* Center the button */
+          margin: 20px 0; /* Add some margin for spacing */
+          }
+  .start-button {
             display: inline-block;
             padding: 8px 16px; /* Smaller padding */
             font-size: 14px; /* Smaller font size */
@@ -218,24 +130,65 @@
             white-space: nowrap; /* Prevent line breaks */
             border-radius: 25px;
             }
-
     .start-button:hover {
             background-color: #f0f0f0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             }
-
     .start-button:focus {
             outline: none;
             }
-
     .start-button span {
             margin-left: 5px;
             }
-
-    .button-container {
-            text-align: center; /* Center the button */
-            margin: 20px 0; /* Add some margin for spacing */
-            }
+    .panel {
+        width: 100%; /* Adjust this to the desired width */
+        overflow: hidden;
+        position: relative;
+        background-color: var(--eerie-black-2);
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .row {
+        display: flex;
+        width: 200%; /* Double the viewport width to ensure continuous flow */
+        white-space: nowrap;
+        position: relative;
+       }
+    .row-left {
+        animation: flow-left 60s linear infinite;
+    }
+    .row-right {
+        animation: flow-right 60s linear infinite;
+        transform: translateX(-25%); /* Start the view from the middle of the row */
+    }
+    .block {
+        display: inline-block;
+        background-color: var(--eerie-black-2);
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 12px;
+        margin: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        text-align: center;
+        flex-shrink: 0; /* Prevent blocks from shrinking too much */
+    }
+    @keyframes flow-left {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    @keyframes flow-right {
+        0% {
+            transform: translateX(-25%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
     .variable {
             /* color: #f69d95;  #f69d95 */
             color: #988989;
@@ -249,57 +202,52 @@
             color: #6b5b5b;
             display: inline;
             }
+    .largesize-small {
+        font-size: 1.2em;
+        }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+         }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        }
+    .code-block {
+        background-color: #0d0d0d; /* Background color */
+        padding: 5px 10px; /* Reduced padding */
+        border-radius: 5px; /* Rounded corners */
+        font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+        color: #ffffff; /* Default text color */
+        white-space: pre; /* Preserve whitespace */
+        margin: 0; /* Remove any default margin */
+        line-height: 1.5; /* Adjust line height for compactness */
+        overflow: auto; /* Ensure scrolling for long lines */
+        font-size: 14px; /* Smaller font size */
+        text-align: left; /* Align text to the left */
+        width: 88%; /* Responsive width */
+        max-width: 1000px; /* Maximum width */
+        }
+    .code-block .variable {
+            color: #988989; /* Variable color */
+            display: inline;
+            }
+    .code-block .field {
+            color: var(--orange-yellow-crayola); /* Field color */
+            display: inline;
+            }
+    .code-block .string {
+            color: #6b5b5b; /* String color */
+            display: inline;
+            }
     .download-link {
             display: inline;
             color: var(--orange-yellow-crayola);
             text-decoration: underline;
             }
-    .code-block {
-            background-color: #0d0d0d; /* Background color */
-            padding: 5px 10px; /* Reduced padding */
-            border-radius: 5px; /* Rounded corners */
-            font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
-            color: #ffffff; /* Default text color */
-            white-space: pre; /* Preserve whitespace */
-            margin: 0; /* Remove any default margin */
-            line-height: 1.5; /* Adjust line height for compactness */
-            overflow: auto; /* Ensure scrolling for long lines */
-            font-size: 14px; /* Smaller font size */
-            text-align: left; /* Align text to the left */
-            width: 92%; /* Responsive width */
-            max-width: 1000px; /* Maximum width */
-            min-width: 300px; /* Minimum width */
-            }
-
-    .code-block .variable {
-            color: #988989; /* Variable color */
-            display: inline;
-            }
-
-    .code-block .field {
-            color: var(--orange-yellow-crayola); /* Field color */
-            display: inline;
-            }
-
-    .code-block .string {
-            color: #6b5b5b; /* String color */
-            display: inline;
-            }
-    .keyword {
-            color: #268bd2; /* Solarized Blue */
-            display: inline;
-            }
-
-    .strings {
-            color: #dc322f; /* Solarized Red */
-            display: inline;
-            }
-
-    .comment {
-            color: #859900; /* Solarized Green */
-            display: inline;
-            }
-    .container {
+    .downloadcontainer {
         max-width: 1000px;
         margin: 0 auto;
         padding: 20px;
@@ -309,13 +257,13 @@
         }
     .current-version, .older-versions, .license {
       margin-bottom: 20px;
-    }
+        }
     .current-version {
       border: 2px solid var(--orange-yellow-crayola);
       border-radius: 8px;
       padding: 15px;
       background-color: #333;
-    }
+        }
     .license {
       background-color: #f8f9fa;
       padding: 15px;
@@ -323,7 +271,7 @@
       border-radius: 8px;
       font-size: 0.9em;
       color: #856404;
-    }
+        }
     .license a {
       color: #856404;
       text-decoration: none;
@@ -354,27 +302,7 @@
     .older-versions a:hover {
       text-decoration: underline;
     }
-    .icon {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
-    .highlight {
-      color: #f69d95; /* Highlight color for numbers */
-    }
-    .image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0;
-    }
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-    }
-   </style>
-   
+  </style>
 </head>
 
 <body>
@@ -392,16 +320,6 @@
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-
-        <!-- <figure class="avatar-box">
-          <img src="./assets/images/DalineLogo.png" alt="Daline" width="80">
-        </figure> -->
-
-        <!-- <div class="info-content">
-          <h1 class="name" title="贾孟硕 博士" style="font-size: 16px; margin-bottom: 1px;">贾孟硕 博士</h1>
-          <h1 class="name" title="Daline" style="font-size: 16px;  margin-bottom: 6px;">Daline</h1>
-          <p class="title">Data-driven Linearization</p>
-        </div> -->
 
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar-shade.png" alt="Dr. Mengshuo Jia" width="80">
@@ -449,9 +367,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">ORCiD</p>
+              <p class="contact-title">Daline</p>
 
-              <address>0000-0002-2027-5314</address>
+              <a href="https://www.shuo.science/daline" class="contact-link">shuo.science/daline</a>
             </div>
 
           </li>
@@ -589,290 +507,278 @@
 
       <article class="about  active" data-page="about">
 
-        <!-- <header>
-          <h2 class="h2 article-title"> About   </h2>
-        </header> -->
-
+      
 
         <section class="about-text">
-
-           
-            
-            <!-- <img src="assets/images/Daline-NoMargin.png" alt="Icon" width="20" height="20"> -->
-            <p style="text-align: center;"> <br>  <br> <span class="dalinehead"> DALINE</span> <br>  <span class="largesize">Get Data. Find Methods. Linearize Models. <br> Code Less. Make More. Save Time. </span> <br><br> <span class="smallsize golden"> Free to use. Quick to deploy. Easy to code. Efficient to run. <br> <span class="dalineinline">Daline</span>  can help with data-driven power flow linearization and more. </span> </p> 
-
-            <!-- class="golden" -->
-            <!-- Elegant to code. Efficient to run -->
+          <p style="text-align: center;"> <br>  <br> <span class="dalinehead"> DALINE</span> <br>  <span class="largesize">Get Data. Find Methods. Linearize Models. <br> Code Less. Make More. Save Time. </span> <br><br> <span class="smallsize golden"> Free to use. Quick to deploy. Easy to code. Efficient to run. <br> <span class="dalineinline">Daline</span>  can help with data-driven power flow linearization and more. </span> </p> 
 
             <div class="half-line-break"></div>
 
             <div class="button-container">
                 <a href="#" class="start-button" onclick="navigateTo('get started')">
-                  <span>Start now ↗</span>
+                  <span>Start now</span>
                 </a>
-              </div>
+            </div>
 
-            
-              <div class="half-line-break"></div>
-              <div class="half-line-break"></div>
+            <div class="half-line-break"></div>
+            <div class="half-line-break"></div>
 
-            
+          
             <div class="panel">
-                <div class="row row-left">
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'noise.SNR_dB'</span>, 45)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">noise</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">outlier</span>(<span class="variable">data</span>, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'outlier.percentage'</span>, 2.5)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">denoise</span>(<span class="variable">data</span>, <span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'filNoi.useARModel'</span>, false, <span class="string">'filNoi.zeroInitial'</span>, 0)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">deoutlier</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">normalize</span>(<span class="variable">data</span>, <span class="string">'norm.switch'</span>, 1)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'num.trainSample'</span>, 500, <span class="string">'num.testSample'</span>, 300)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>}, <span class="string">'PLOT.repeat'</span>, 5, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">method</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.program'</span>, <span class="string">'acpf'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
-                  </div>
+              <div class="row row-left">
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>)</code></pre>
                 </div>
-                <div class="row row-right">
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_HBLE'</span>, <span class="string">'HBL.language'</span>, <span class="string">'yalmip'</span>, <span class="string">'HBL.solver'</span>, <span class="string">'quadprog'</span>, <span class="string">'HBL.programType'</span>, <span class="string">'whole'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_LIFX'</span>, <span class="string">'variable.liftType'</span>, <span class="string">'polyharmonic'</span>, <span class="string">'variable.liftK'</span>, 2)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_WEI'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'DRC_XYM'</span>, <span class="string">'DRC.probThreshold'</span>, 90, <span class="string">'DRC.gamma2'</span>, 0.5, <span class="string">'DRC.language'</span>, <span class="string">'cvx'</span>, <span class="string">'DRC.solverM'</span>, <span class="string">'Mosek'</span>, <span class="string">'DRC.programType'</span>, <span class="string">'whole'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REC'</span>, <span class="string">'LSR.recursivePercentage'</span>, 30, <span class="string">'LSR.initializeP'</span>, 0)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REP'</span>, <span class="string">'LSR.recursivePercentage'</span>, 75)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'DLPF_C'</span>, <span class="string">'RR'</span>, <span class="string">'PLS_REC'</span>}, <span class="string">'RR.lambdaInterval'</span>, 1e-5, <span class="string">'RR.cvNumFold'</span>, 4, <span class="string">'PLS.recursivePercentage'</span>, 40)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_HBLE'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_LIFX'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_WEI'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">dataN</span>, <span class="string">'method.name'</span>, <span class="string">'DRC_XYM'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REC'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REP'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'DLPF_C'</span>, <span class="string">'RR'</span>, <span class="string">'PLS_REC'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>, <span class="string">'Vm'</span>})</code></pre>
-                  </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>)</code></pre>
                 </div>
-                <div class="row row-left">
-                  <div class="block">
-                    <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">methods</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">methods</span>, <span class="string">'PLOT.response'</span>, {<span class="string">'Vm'</span>, <span class="string">'PF'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'TAY'</span>, <span class="string">'QR'</span>}, <span class="string">'PLOT.theme'</span>, <span class="string">'commercial'</span>, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code>daline.<span class="field">time</span>(<span class="variable">data</span>, <span class="variable">methods</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code>daline.<span class="field">time</span>(<span class="variable">datalist</span>, <span class="variable">methods</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>, <span class="string">'Vm'</span>}, <span class="string">'PLOT.repeat'</span>, 5, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, <span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">method</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'noise.switchTrain'</span>, 1, <span class="string">'noise.switchTest'</span>, 1, <span class="string">'noise.SNR_dB'</span>, 45)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">noise</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">outlier</span>(<span class="variable">data</span>, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'outlier.percentage'</span>, 2.5)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">denoise</span>(<span class="variable">data</span>, <span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false, <span class="string">'filNoi.zeroInitial'</span>, 0)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">deoutlier</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">normalize</span>(<span class="variable">data</span>, <span class="string">'norm.switch'</span>, 1)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'num.trainSample'</span>, 500, <span class="string">'num.testSample'</span>, 300, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>, <span class="string">'noise.switchTrain'</span>, 1, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'norm.switch'</span>, 1)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'case.name'</span>, <span class="string">'case57'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>); <span class="variable">data</span> = daline.<span class="field">data</span>(<span class="variable">opt</span>)</code></pre>
-                  </div>
-                  <div class="block">
-                    <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'data.baseType'</span>, <span class="string">'Random'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
-                  </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'noise.SNR_dB'</span>, 45)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">noise</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">outlier</span>(<span class="variable">data</span>, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'outlier.percentage'</span>, 2.5)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">denoise</span>(<span class="variable">data</span>, <span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'filNoi.useARModel'</span>, false, <span class="string">'filNoi.zeroInitial'</span>, 0)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">deoutlier</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">normalize</span>(<span class="variable">data</span>, <span class="string">'norm.switch'</span>, 1)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'num.trainSample'</span>, 500, <span class="string">'num.testSample'</span>, 300)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>}, <span class="string">'PLOT.repeat'</span>, 5, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">method</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.program'</span>, <span class="string">'acpf'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
                 </div>
               </div>
-              
+              <div class="row row-right">
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_HBLE'</span>, <span class="string">'HBL.language'</span>, <span class="string">'yalmip'</span>, <span class="string">'HBL.solver'</span>, <span class="string">'quadprog'</span>, <span class="string">'HBL.programType'</span>, <span class="string">'whole'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_LIFX'</span>, <span class="string">'variable.liftType'</span>, <span class="string">'polyharmonic'</span>, <span class="string">'variable.liftK'</span>, 2)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_WEI'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'DRC_XYM'</span>, <span class="string">'DRC.probThreshold'</span>, 90, <span class="string">'DRC.gamma2'</span>, 0.5, <span class="string">'DRC.language'</span>, <span class="string">'cvx'</span>, <span class="string">'DRC.solverM'</span>, <span class="string">'Mosek'</span>, <span class="string">'DRC.programType'</span>, <span class="string">'whole'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REC'</span>, <span class="string">'LSR.recursivePercentage'</span>, 30, <span class="string">'LSR.initializeP'</span>, 0)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REP'</span>, <span class="string">'LSR.recursivePercentage'</span>, 75)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'DLPF_C'</span>, <span class="string">'RR'</span>, <span class="string">'PLS_REC'</span>}, <span class="string">'RR.lambdaInterval'</span>, 1e-5, <span class="string">'RR.cvNumFold'</span>, 4, <span class="string">'PLS.recursivePercentage'</span>, 40)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_HBLE'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_LIFX'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_WEI'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">dataN</span>, <span class="string">'method.name'</span>, <span class="string">'DRC_XYM'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REC'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_REP'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'DLPF_C'</span>, <span class="string">'RR'</span>, <span class="string">'PLS_REC'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, {<span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>, <span class="string">'Vm'</span>})</code></pre>
+                </div>
+              </div>
+              <div class="row row-left">
+                <div class="block">
+                  <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">methods</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">methods</span>, <span class="string">'PLOT.response'</span>, {<span class="string">'Vm'</span>, <span class="string">'PF'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code>daline.<span class="field">rank</span>(<span class="variable">data</span>, {<span class="string">'TAY'</span>, <span class="string">'QR'</span>}, <span class="string">'PLOT.theme'</span>, <span class="string">'commercial'</span>, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code>daline.<span class="field">time</span>(<span class="variable">data</span>, <span class="variable">methods</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code>daline.<span class="field">time</span>(<span class="variable">datalist</span>, <span class="variable">methods</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case39'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>, <span class="string">'Vm'</span>}, <span class="string">'PLOT.repeat'</span>, 5, <span class="string">'PLOT.style'</span>, <span class="string">'light'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">time_list</span> = daline.<span class="field">time</span>(<span class="variable">data</span>, <span class="string">'LS'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'RR'</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_PIN'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_SVD'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'method.name'</span>, <span class="string">'LS_COD'</span>, <span class="string">'variable.predictor'</span>, {<span class="string">'P'</span>, <span class="string">'Q'</span>}, <span class="string">'variable.response'</span>, {<span class="string">'PF'</span>})</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">fit</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">rank</span>(<span class="variable">data</span>, <span class="variable">method</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">generate</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeriesRand'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'noise.switchTrain'</span>, 1, <span class="string">'noise.switchTest'</span>, 1, <span class="string">'noise.SNR_dB'</span>, 45)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">noise</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">outlier</span>(<span class="variable">data</span>, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'outlier.percentage'</span>, 2.5)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">denoise</span>(<span class="variable">data</span>, <span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'filNoi.switchTrain'</span>, 1, <span class="string">'filNoi.useARModel'</span>, false, <span class="string">'filNoi.zeroInitial'</span>, 0)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">deoutlier</span>(<span class="variable">data</span>, <span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">normalize</span>(<span class="variable">data</span>, <span class="string">'norm.switch'</span>, 1)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'num.trainSample'</span>, 500, <span class="string">'num.testSample'</span>, 300, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>, <span class="string">'noise.switchTrain'</span>, 1, <span class="string">'outlier.switchTrain'</span>, 1, <span class="string">'norm.switch'</span>, 1)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">data</span> = daline.<span class="field">data</span>(<span class="string">'case.name'</span>, <span class="string">'case118'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">opt</span> = daline.<span class="field">setopt</span>(<span class="string">'case.name'</span>, <span class="string">'case57'</span>, <span class="string">'data.program'</span>, <span class="string">'acpf'</span>, <span class="string">'data.baseType'</span>, <span class="string">'TimeSeries'</span>); <span class="variable">data</span> = daline.<span class="field">data</span>(<span class="variable">opt</span>)</code></pre>
+                </div>
+                <div class="block">
+                  <pre><code><span class="variable">model</span> = daline.<span class="field">all</span>(<span class="string">'case118'</span>, <span class="string">'data.baseType'</span>, <span class="string">'Random'</span>, <span class="string">'method.name'</span>, <span class="string">'RR'</span>)</code></pre>
+                </div>
+              </div>
+            </div>
 
-            
+
 
             <p style="text-align: center;"> <br> <br> <br> <span class="largesize-small"> Compare, rank, and visualize accuracy <br> of over 55 linearization methods using one code <br>  </span> </p>   
 
             <div class="image-container">
-                <img src="/assets/images/daline-fig1-distribution.png" alt="Description of the image" width="1000">
+                <img src="/assets/images/daline-fig1-distribution.png" alt="Description of the image" width=1000>
             </div>
             
 
@@ -906,261 +812,71 @@
                 <img src="/assets/images/daline-fig0-fluctuation.png" alt="Description of the image" width="1000">
             </div>
 
-              
-        
-          <!-- <p>
-            I am passionate about AI-powered power system identification and optimization, aiming for a secure, low-carbon, economic, and autonomous power grid integrated with renewable energy. My work focuses on fundamental and altruistic research, i.e., proposes basic theories and toolboxes to facilitate better scientific exploration within the academic community and bring benefits to the industry as well. To know more about me, please click the <a href="https://www.shuo.science/" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">Bio</a> button or <a href="cv.pdf" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">download my cv</a>.
-          </p> -->
-
         </section>
+
 
         <section class="testimonials">
 
-            <!-- <h3 class="h3 service-title"><a class="golden">Feature</a></h3> -->
+          <!-- <h3 class="h3 service-title"><a class="golden">Feature</a></h3> -->
+
+          <ul class="service-list">
+          <!-- <ul class="testimonials-list has-scrollbar">    -->
+
+            <li class="service-item">
+              <!-- <li class="testimonials-item"> -->
   
-            <ul class="service-list">
-            <!-- <ul class="testimonials-list has-scrollbar">    -->
+                <div class="service-icon-box">
+                  <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
+                </div>
   
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Latest Advancements</h4>
+  
+                  <p class="service-item-text">
+                      Provides users with access to the <a class="golden">latest advancements in power flow linearization</a>, enabling rapid model acquisition and flexible customization and extension of accurate and computationally efficient approaches. 
+                  </p>
+                </div>
+  
+              </li>
+
               <li class="service-item">
-                <!-- <li class="testimonials-item"> -->
-    
-                  <div class="service-icon-box">
-                    <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
-                  </div>
-    
-                  <div class="service-content-box">
-                    <h4 class="h4 service-item-title">Latest Advancements</h4>
-    
-                    <p class="service-item-text">
-                        Provides users with access to the <a class="golden">latest advancements in power flow linearization</a>, enabling rapid model acquisition and flexible customization and extension of accurate and computationally efficient approaches. 
-                    </p>
-                  </div>
-    
-                </li>
-  
-                <li class="service-item">
-                    <!-- <li class="testimonials-item"> -->
-        
-                      <div class="service-icon-box">
-                        <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
-                      </div>
-        
-                      <div class="service-content-box">
-                        <h4 class="h4 service-item-title">High Flexibility</h4>
-        
-                        <p class="service-item-text">
-                            With an user-friendly architecture that supports over <a class="golden">300 adjustable parameters and options</a>, offering extensive flexibility to meet diverse research and educational needs. 
-                        </p>
-                      </div>
-        
-                    </li>
+                  <!-- <li class="testimonials-item"> -->
+      
+                    <div class="service-icon-box">
+                      <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
+                    </div>
+      
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title">High Flexibility</h4>
+      
+                      <p class="service-item-text">
+                          With an user-friendly architecture that supports over <a class="golden">300 adjustable parameters and options</a>, offering extensive flexibility to meet diverse research and educational needs. 
+                      </p>
+                    </div>
+      
+                  </li>
 
-                    <li class="service-item">
-                        <!-- <li class="testimonials-item"> -->
-            
-                          <div class="service-icon-box">
-                            <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
-                          </div>
-            
-                          <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Minimal Coding</h4>
-            
-                            <p class="service-item-text">
-                                Crafted for simplicity, enabling users to accomplish complex tasks with <a class="golden">minimal coding</a>, often requiring just <a class="golden">one or two lines of code</a>.
-                            </p>
-                          </div>
-            
-                        </li>
-  
-            </ul>
-
-        </section>
+                  <li class="service-item">
+                      <!-- <li class="testimonials-item"> -->
           
-        <!--
-          - service
-        -->
-
-        <!-- <section class="service"> -->
-        
-
-
-        <!--         
-          - testimonials
-        -->
-
-        <!-- <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Selected Works</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Daline.png" alt="Linearity" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daline®</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <a href="https://github.com/JarvisETHZ/DPFL-Master">
-    
-                    <h3 class="project-title">Daline®: data-driven power flow linearization tools for power systems research and education</h3>
-    
-                    <p class="project-category">Mengshuo Jia, Gabriela Hug</p>
-    
-                  </a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Tutorial1.png" alt="Linearity" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tutorial</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606654">
-    
-                    <h3 class="project-title">Tutorial on Data-driven Power Flow Linearization - Part I</h3>
-    
-                    <p class="project-category">Mengshuo Jia, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang</p>
-    
-                  </a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Tutorial2.png" alt="Linearity" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tutorial</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/606656">
-    
-                    <h3 class="project-title">Tutorial on Data-driven Power Flow Linearization - Part II</h3>
-    
-                    <p class="project-category">Mengshuo Jia, Gabriela Hug, Ning Zhang, Zhaojian Wang, Yi Wang</p>
-    
-                  </a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Iterative.png" alt="Optimal Power Flow" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>OPF</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <a href="https://ieeexplore.ieee.org/document/9400744">
-    
-                    <h3 class="project-title">Iterative Decomposition of Joint Chance Constraints in OPF</h3>
-    
-                    <p class="project-category">Mengshuo Jia, Gabriela Hug, Chen Shen</p>
-    
-                  </a>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Distributed Clustering.png" alt="Optimal Power Flow" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Privacy</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <a href="https://ieeexplore.ieee.org/document/9223745">
-    
-                    <h3 class="project-title">Privacy-preserving Distributed Clustering for Electrical Load Profiling</h3>
-    
-                    <p class="project-category">Mengshuo Jia, Yi Wang, Chen Shen, Gabriela Hug</p>
-    
-                  </a>
-                </div>
-
-              </div>
-            </li>
-
+                        <div class="service-icon-box">
+                          <img src="./assets/images/Daline-NoMargin.png" alt="design icon" width="40">
+                        </div>
+          
+                        <div class="service-content-box">
+                          <h4 class="h4 service-item-title">Minimal Coding</h4>
+          
+                          <p class="service-item-text">
+                              Crafted for simplicity, enabling users to accomplish complex tasks with <a class="golden">minimal coding</a>, often requiring just <a class="golden">one or two lines of code</a>.
+                          </p>
+                        </div>
+          
+                      </li>
 
           </ul>
 
-          <section class="about-text">
-            <small>
-            <p class="centered-text">
-              To see more of my works, please <a style="display: inline; color: var(--orange-yellow-crayola);">scroll right</a> or click the <a style="display: inline; color: var(--orange-yellow-crayola);">Research</a> button at the navigation bar.
-            </p>
-          </small>
-          </section>
+      </section>
 
-        </section> -->
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2023-04-06">06 April, 2023</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
 
 
         <!--
@@ -1213,16 +929,8 @@
 
       <article class="bio" data-page="get started">
 
-        <!-- <header>
-          <h2 class="h2 article-title"><br></h2>
-        </header> -->
-
+        <p> <br> </p>
         
-        <!-- <h2 class="h2 article-title"><br></h2> -->
-
-        <p> <br> </p>
-        <p> <br> </p>
-        <p> <br> </p>
         <!-- <p> <br> </p> -->
 
         <section class="about-text" style="margin-bottom: -10px;">
@@ -1247,7 +955,6 @@
             </ul>
 
         </section>
-
 
         <section class="timeline" style="margin-top: -10px;">
           <div class="title-wrapper">
@@ -1302,11 +1009,11 @@
                 There is no step 3, but you can now choose to verify all the functionality of <span class="dalineinline">Daline</span>  by typing:
               </p>
 
-              <pre class="code-block"><code><span class="field"> daline_test</span><span class="comment">  </span>  </code></pre>
+              <pre class="code-block"><code><span class="field"> daline_test</span></code></pre>
               <p class="timeline-text">
                 Or to verify any specific built-in linearization methods, e.g., 'PLS_REC' and 'RR_KPC', in <span class="dalineinline">Daline</span>  by typing:
               </p>
-              <pre class="code-block"><code><span class="field"> daline_test</span>({<span class="string">'PLS_REC'</span>; <span class="string">'RR_KPC'</span>}) <span class="comment">  </span></code></pre>
+              <pre class="code-block"><code><span class="field"> daline_test</span>({<span class="string">'PLS_REC'</span>; <span class="string">'RR_KPC'</span>})</code></pre>
               <p class="timeline-text">
                 And, if you find <span class="dalineinline">Daline</span> helpful for your work, please remember to cite the following reference!</p>
               <pre class="code-block"><code>@article{Daline,<br>  author={Jia, Mengshuo and Chan, Wen Yi and Hug, Gabriela},<br>  title={Daline: A Data-driven Power Flow Linearization Toolbox for Power Systems Research and Education},<br>  year={2024},<br>}</code></pre> 
@@ -1486,21 +1193,9 @@
 
       <article class="news" data-page="downloads">
 
-        <!-- <header>
-          <h2 class="h2 article-title"><br></h2>
-        </header> -->
-
-        <!-- <h3 class="h2 article-title"><br></h3> -->
 
         <p> <br> </p>
         <p> <br> </p>
-        <p> <br> </p>
-        <p> <br> </p>
-        <p> <br> </p>
-        <!-- <p> <br> </p> -->
-        <!--
-          - service
-        -->
         <section class="service">
 
           
@@ -1519,33 +1214,31 @@
                 <p class="service-item-text">
                   1. <span class="dalineinline">Daline</span> is free of charge to use and is openly distributed. </p>
                   <div class="half-line-break"></div>
-                  <p class="service-item-text">  
+                <p class="service-item-text">  
                   2. <span class="dalineinline">Daline</span> is distributed under the 3-Clause BSD License.  </p>
                   <div class="half-line-break"></div>
-                  <p class="service-item-text">  
-                  2. The copyright of <span class="dalineinline">Daline</span> is owned by <a href="https://www.shuo.science/" style="display: inline; color: var(--orange-yellow-crayola); text-decoration: underline;">Mengshuo Jia</a> and <a href="https://psl.ee.ethz.ch/people/prof--gabriela-hug.html" style="display: inline; color: var(--orange-yellow-crayola); text-decoration: underline;">Gabriela Hug</a> with all rights reserved.  </p>
+                <p class="service-item-text">  
+                  3. The copyright of <span class="dalineinline">Daline</span> is owned by <a href="https://www.shuo.science/" style="display: inline; color: var(--orange-yellow-crayola); text-decoration: underline;">Mengshuo Jia</a> and <a href="https://psl.ee.ethz.ch/people/prof--gabriela-hug.html" style="display: inline; color: var(--orange-yellow-crayola); text-decoration: underline;">Gabriela Hug</a> with all rights reserved.  </p>
                   <div class="half-line-break"></div>
-                  <p class="service-item-text">  
-                  2. <span class="dalineinline">Daline</span> must be cited via the following reference when used in a published work.  </p>
-                  <pre class="code-block"><code>@article{Daline,<br>  author={Jia, Mengshuo and Chan, Wen Yi and Hug, Gabriela},<br>  title={Daline: A Data-driven Power Flow Linearization Toolbox for Power Systems Research and Education},<br>  year={2024},<br>}</code></pre> 
+                <p class="service-item-text">  
+                  4. <span class="dalineinline">Daline</span> must be cited via the following reference when used in a published work.  </p>
+                  <pre class="code-block" style="width: 85%;"><code>@article{Daline,<br>  author={Jia, Mengshuo and Chan, Wen Yi and Hug, Gabriela},<br>  title={Daline: A Data-driven Power Flow Linearization Toolbox for Power Systems Research and Education},<br>  year={2024},<br>}</code></pre> 
                 
               </div>
 
             </li>
-
-
           </ul>
 
           <p> <br> </p>
-          <p> <br> </p>
+          <!-- <p> <br> </p> -->
 
-        <div class="container">
+        <div class="downloadcontainer">
             <h4 class="h4 service-item-title" style="color: var(--orange-yellow-crayola)">Release</h4>
 
             <p> <br> </p>
             
             <div class="current-version">
-              <p>Current Release Version: <a href="cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2.zip'});">daline1.1.2.zip</a> — released May 31, 2024</p>
+              <p> <a style="color: #ffffff; display: inline;">Current Release Version: </a><a href="cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2.zip'});">daline1.1.2.zip</a> <a style="color: #ffffff; display: inline;"> — released May 31, 2024 </a></p>
           </div>
       
           <div class="older-versions">
@@ -1559,14 +1252,14 @@
                   </thead>
                   <tbody>
                       <tr>
-                          <td>1.1.2</td>
-                          <td><a href="path/to/cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2 (May 31, 2024)'});">daline1.1.2.zip (32.28 MB)</a></td>
-                          <td>May 31, 2024</td>
+                          <td><a style="color: #ffffff;">1.1.2</a></td>
+                          <td><a href="cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2 (May 31, 2024)'});">daline1.1.2.zip (32.28 MB)</a></td>
+                          <td><a style="color: #ffffff;">May 31, 2024</a></td>
                       </tr>
                       <tr>
-                          <td>1.1.1</td>
-                          <td><a href="path/to/cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.1 (January 1, 2024)'});">daline1.1.1.zip (31.32 MB)</a></td>
-                          <td>January 1, 2024</td>
+                          <td><a style="color: #ffffff;">1.1.1</a></td>
+                          <td><a href="cv.pdf" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.1 (January 1, 2024)'});">daline1.1.1.zip (31.32 MB)</a></td>
+                          <td><a style="color: #ffffff;">January 1, 2024</a></td>
                       </tr>
                   </tbody>
               </table>
@@ -1577,6 +1270,7 @@
 
         </section>
 
+        
         <!-- <section class="about-text">
           <br>
           <p class="centered-text">
@@ -1597,15 +1291,10 @@
 
       <article class="research" data-page="documentation">
 
-        <!-- <header>
-          <h2 class="h2 article-title">Research</h2>
-        </header> -->
-
         <p> <br> </p>
         <p> <br> </p>
         <p> <br> </p>
-        <p> <br> </p>
-        <p> <br> </p>
+        
         <!-- <p> <br> </p> -->
  
         
@@ -1800,20 +1489,11 @@
 
       <article class="award" data-page="license">
 
-        <!-- <header>
-          <h2 class="h2 article-title">Awards</h2>
-        </header> -->
-
-
-        <!--
-          - service
-        -->
-
+       
         <p><br></p>
         <p><br></p>
         <p><br></p>
-        <p><br></p>
-        <p><br></p>
+        
         <!-- <p><br></p> -->
 
         <section class="service">
@@ -1892,8 +1572,6 @@
               </ul>
     
             </section>
-
-        
 
 
       </article>
@@ -2097,15 +1775,8 @@
 
       <article class="contact" data-page="github">
 
-        <!-- <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header> -->
+        
 
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
         <!-- <section class="mapbox" data-mapbox>
           <figure>
             <iframe
@@ -2113,6 +1784,12 @@
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section> -->
+
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
 
         <section class="contact-form">
 
