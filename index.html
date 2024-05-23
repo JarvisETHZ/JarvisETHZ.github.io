@@ -52,6 +52,18 @@
     background-color: #121212;
     color: white;
     }
+  .dalineinline {
+      font-family: "Times New Roman", Times, serif;
+      font-variant: small-caps;
+      font-weight: bold;
+      color: #ffffff;
+      display: inline; /* Ensure it remains inline */
+      line-height: 1.5; /* Adjust line-height to prevent breaks */
+    }
+  .dalineinline::first-letter {
+      font-size: 3em; /* Make the first letter larger */
+      vertical-align: baseline; /* Align the larger letter properly */
+    }
   </style>
 </head>
 
@@ -291,6 +303,29 @@
 
         </section>
 
+        <section class="testimonials">
+          <h3 class="h3 service-title">New Toolbox Launch Coming</h3>
+          <ul class="service-list">
+
+            <li class="service-item">
+
+            
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title"><img src="./assets/images/dalinelogo-all.png" alt="design icon" width="150"></h4>
+
+                <p class="service-item-text">
+                  We are going to launch <span class="dalineinline">Daline</span>, a data-driven power flow linearization toolbox designed for power systems researchers, educators, and engineers. This free, open-source package consists of MATLAB-language M-files, featuring <a style="color: var(--orange-yellow-crayola); display: inline;">57</a> linearization methods, including <a style="color: var(--orange-yellow-crayola); display: inline;">53</a> data-driven methods and <a style="color: var(--orange-yellow-crayola); display: inline;">4</a> commonly used physics-driven methods. <span class="dalineinline">Daline</span>  offers support for: data generation, data processing (pollution, cleaning, and normalization), method selection, method customization, model linearization, method evaluation, and result visualization. The design philosophy of <span class="dalineinline">Daline</span> is free to use, quick to deploy, and easy to code. Interested? See <a href="https://www.shuo.science/daline" style="display: inline; color: var(--orange-yellow-crayola); text-decoration: underline;"> <span class="dalineinline" style="color: var(--orange-yellow-crayola);">Daline</span> Official Website </a> for more details. 
+                </p>
+              </div>
+
+
+            </li>
+
+
+          </ul>
+
+        </section>
 
         <!--
           - service
