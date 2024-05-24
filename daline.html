@@ -311,6 +311,11 @@
             width: 30px;
             margin-right: 10px; /* Adjust as needed for spacing */
         }
+    .negative-line-break {
+        display: block;
+        height: -0.5em; /* Adjust the value to be half of the line height */
+        content: "";
+    }
   </style>
 </head>
 
@@ -478,8 +483,8 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="/daline.html" class="navbar-link">
-                <img src="assets/images/DalineLogo.png" alt="Daline" style="width: 30px;">
+            <a href="/" class="navbar-link">
+              <img src="assets/images/logo.png" alt="shuo.science" style="width: 20px;">
             </a>
           </li>
 
@@ -957,26 +962,57 @@
             <!-- <h2 class="h3 article-title"> <br>Introduction </h2> -->
             <!-- <h3 class="h3"><br>Introduction </h3> -->
 
-            <p>
-                <br>
-                <span class="dalineinline">Daline</span> is a data-driven power flow linearization toolbox designed for power systems researchers, educators, and engineers. This free, open-source package consists of MATLAB-language M-files, featuring <a class="golden">57</a> linearization methods, including <a class="golden">53</a> data-driven methods and <a class="golden">4</a> commonly used physics-driven methods. <span class="dalineinline">Daline</span>  offers support for:
-            </p>
             
-            <ul class="centered-list" style="margin-bottom: -10px;">
-                <li>• Data Generation </li>
-                <li>• Data Processing (pollution, cleaning, and normalization)</li> <!--   -->
-                <li>• Method Selection </li>
-                <li>• Method Customization </li>
-                <li>• Model Linearization </li>
-                <li>• Method Evaluation </li>
-                <li>• Result Visualization </li>
-            </ul>
-
+            
+            
+            
         </section>
+
 
         <section class="timeline" style="margin-top: -10px;">
           <div class="title-wrapper">
-            <h3 class="h3"><br> <br> Setup <span class="dalineinline">Daline</span>  </h3>
+            <h3 class="h3"><br>   <span class="dalineinline">Daline</span>  </h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Overview</h4>
+
+              <p class="timeline-text">
+                Power flow linearization approaches should be readily accessible as fundamental tools. However, most existing methods, particularly the promising data-driven techniques, are unfortunately not open-sourced, nor available in existing toolkits or software. We thus developed <span class="dalineinline">Daline</span>, a data-driven power flow linearization toolbox designed for power systems researchers, educators, and engineers. This free, open-source package consists of MATLAB-language M-files, featuring <a class="golden">57</a> linearization methods, including <a class="golden">53</a> data-driven methods and <a class="golden">4</a> commonly used physics-driven methods. 
+             </p>
+
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Functionality </h4>
+
+              <!-- <span></span> -->
+
+              <p class="timeline-text">
+                (1) Data Generation. (2) Data Pollution. (3) Data Cleaning. (4) Data Normalization. (5) Method Selection. (6) Method Customization. (7) Model Linearization. (8) Model Evaluation. (9) Result Visualization.
+              </p>
+              
+              <!-- <p class="timeline-text">
+                (1) Data Generation. <br> (2) Data Pollution. <br>(3) Data Cleaning. <br>(4) Data Normalization. <br>(5) Method Selection. <br>(6) Method Customization. <br>(7) Model Linearization. <br>(8) Model Evaluation. <br>(9) Result Visualization.
+              </p> -->
+
+            </li>
+
+            
+
+          </ol>
+
+        </section>
+        
+
+        <section class="timeline" style="margin-top: -10px;">
+          <div class="title-wrapper">
+            <h3 class="h3">Setup <span class="dalineinline">Daline</span>  </h3>
           </div>
 
           <ol class="timeline-list">
@@ -986,7 +1022,7 @@
               <h4 class="h4 timeline-item-title">Step 1: Download <span class="dalineinline">Daline</span> </h4>
 
               <p class="timeline-text">
-                Click <a href="daline1.1.2.zip" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2.zip'});">daline1.1.2.zip</a> to download the latest release version, and extract the downloaded ZIP file anywhere you like.
+                Click <a href="daline1.1.2.zip" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline1.1.2.zip'});">daline1.1.2.zip</a> to download the latest release version, and extract the downloaded ZIP file anywhere you like (<a class="golden">Note: The official package will be launched soon!</a>).
              </p>
 
 
@@ -1496,7 +1532,7 @@
        
         <p><br></p>
         <p><br></p>
-        <p><br></p>
+        <!-- <p><br></p> -->
         
         <!-- <p><br></p> -->
 
@@ -1791,9 +1827,9 @@
 
         <p><br></p>
         <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
+
+        <h3 class="h3 form-title" style="text-align: center; color: var(--orange-yellow-crayola);">Github is coming soon!</h3>
+        
 
         <section class="contact-form">
 
