@@ -150,16 +150,16 @@
     }
     .row {
         display: flex;
-        width: 200%; /* Double the viewport width to ensure continuous flow */
+        width: 1300%; /* Double the viewport width to ensure continuous flow */
         white-space: nowrap;
         position: relative;
        }
     .row-left {
-        animation: flow-left 60s linear infinite;
+        animation: flow-left 200s linear infinite;
     }
     .row-right {
-        animation: flow-right 60s linear infinite;
-        transform: translateX(-25%); /* Start the view from the middle of the row */
+        animation: flow-right 200s linear infinite;
+        
     }
     .block {
         display: inline-block;
@@ -178,12 +178,12 @@
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(-50%);
+            transform: translateX(-100%);
         }
     }
     @keyframes flow-right {
         0% {
-            transform: translateX(-25%);
+            transform: translateX(-100%);
         }
         100% {
             transform: translateX(0%);
