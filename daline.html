@@ -536,7 +536,7 @@
        </div>
        <p><br></p>
         <section class="about-text">
-          <p style="text-align: center;"> <span class="largesize">Get Data. Find Methods. Identity Models. </span> <br><br> <span class="smallsize golden"> Free to use. Quick to deploy. Easy to code. <br>  For data-driven or hybrid-driven power flow identification, and more. </span> </p> 
+          <p style="text-align: center;"> <span class="largesize">Get Data. Choose Methods. Build Models. </span> <br><br> <span class="smallsize golden"> Free to use. Quick to deploy. Easy to code. <br>  For physics-informed data-driven power flow identification — and beyond. </span> </p> 
 
             <div class="half-line-break"></div>
 
@@ -988,7 +988,7 @@
               <h4 class="h4 timeline-item-title">Overview</h4>
 
               <p class="timeline-text">
-                Power flow linearization approaches should be readily accessible as fundamental tools. However, most existing methods, particularly the promising data-driven techniques, are unfortunately not open-sourced, nor available in existing toolkits or software. We thus developed <span class="dalineinline">Daline</span>, a data-driven power flow linearization toolbox designed for power systems researchers, educators, and engineers. This free, open-source package consists of MATLAB-language M-files, featuring <a class="golden">57</a> linearization methods, including <a class="golden">53</a> data-driven methods and <a class="golden">4</a> commonly used physics-driven methods. 
+                Generalized power flow linearization approaches should be readily accessible as fundamental tools. However, most existing methods, particularly the promising data-driven techniques, are unfortunately not open-sourced, nor available in existing toolkits or software. We thus developed <span class="dalineinline">Daline</span>, a generalized data-driven power flow linearization toolbox designed for power systems researchers, educators, and engineers. This free, open-source package supports <a class="golden">58</a> linearization methods, including <a class="golden">54</a> (physics-informed) data-driven methods and <a class="golden">4</a> commonly used physics-driven methods. 
              </p>
 
 
@@ -1029,7 +1029,7 @@
               <h4 class="h4 timeline-item-title">Step 1: Download <span class="dalineinline">Daline</span> </h4>
 
               <p class="timeline-text">
-                Click <a href="Daline116.zip" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline116.zip'});">daline116.zip</a> to download the latest release version, and extract the downloaded ZIP file anywhere you like.
+                Click <a href="Daline117.zip" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline116.zip'});">daline117.zip</a> to download the latest release version.
              </p>
 
 
@@ -1042,22 +1042,13 @@
               <!-- <span></span> -->
 
               <p class="timeline-text">
-                Start MATLAB and change your working directory to the <span class="dalineinline">Daline</span>  directory you just extracted (the one containing daline_setup.m). <span class="dalineinline">Daline</span>  will be installed by typing the following command in the MATLAB command window: 
+                Start MATLAB and change your working directory to the <span class="dalineinline">Daline</span>  directory you just extracted (the one containing daline_setup.m). <span class="dalineinline">Daline</span>  and its environment will be installed by typing the following command in the MATLAB command window: 
               </p>
 
               <pre class="code-block"><code><span class="field"> daline_setup</span></code></pre>
 
               <!-- <span></span> -->
 
-              <p class="timeline-text">
-                The above command will install <span class="dalineinline">Daline</span>  with a quick test of its major functionality. If you want to install <span class="dalineinline">Daline</span>  while testing all its functionality, type the following command:
-              </p>
-
-              <pre class="code-block"><code><span class="field"> daline_setup</span>(<span class="string">'full'</span>)</code></pre>
-
-              <!-- <p class="timeline-text">
-                Join <a href="https://nccr-automation.ch/about/people/mengshuo-jia" style="display: inline; color: var(--orange-yellow-crayola);">NCCR Automation</a> and work on one of the most fundamental topics in the energy domain, i.e.,  linearity in energy systems. 
-              </p> -->
             </li>
 
             <li class="timeline-item">
@@ -1067,20 +1058,15 @@
               <!-- <span></span> -->
 
               <p class="timeline-text">
-                There is no step 3, but you can now choose to verify all the functionality of <span class="dalineinline">Daline</span>  by typing:
+                There is no step 3. Enjoy! 
               </p>
 
-              <pre class="code-block"><code><span class="field"> daline_test</span></code></pre>
-              <p class="timeline-text">
-                Or to verify any specific built-in linearization methods, e.g., 'PLS_REC' and 'RR_KPC', in <span class="dalineinline">Daline</span>  by typing:
-              </p>
-              <pre class="code-block"><code><span class="field"> daline_test</span>({<span class="string">'PLS_REC'</span>; <span class="string">'RR_KPC'</span>})</code></pre>
               <p class="timeline-text">
                 And, if you find <span class="dalineinline">Daline</span> helpful for your work, please remember to cite the following reference!</p>
               <pre class="code-block"><code>@article{Daline,<br>  author = {Jia, Mengshuo and Chan, Wen Yi and Hug, Gabriela},<br>  title = {Daline: A Data-driven Power Flow Linearization Toolbox for Power Systems Research and Education}, <br>  journal = {ETH Research Collection},
-  year = {2024}, 
-  url = {https://doi.org/10.3929/ethz-b-000681867},
-  doi = {10.3929/ethz-b-000681867}<br>}</code></pre> 
+              year = {2024}, 
+              url = {https://doi.org/10.3929/ethz-b-000681867},
+              doi = {10.3929/ethz-b-000681867}<br>}</code></pre> 
               
 
             </li>
@@ -1177,7 +1163,7 @@
           <br>
           <p class="centered-text">
           <small>
-            More can be found in the <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/680438/Daline_User_Manual.pdf?sequence=1&isAllowed=y" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">Daline user manual</a>.
+            More can be found in the <a href="https://github.com/JarvisETHZ/JarvisETHZ.github.io/blob/master/Daline_User_Manual_1.1.7.pdf" target="_blank" style="display: inline; color: var(--orange-yellow-crayola);">Daline user manual</a>.
           </small>
           </p>
         </section>
@@ -1294,7 +1280,7 @@
             <p> <br> </p>
             
             <div class="current-version">
-              <p> <a style="color: #ffffff; display: inline;">Current Release Version: </a><a href="Daline116.zip" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline116.zip'});">daline116.zip</a> <a style="color: #ffffff; display: inline;"> — released on November 30, 2024. </a></p>
+              <p> <a style="color: #ffffff; display: inline;">Current Release Version: </a><a href="Daline117.zip" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline117.zip'});">daline117.zip</a> <a style="color: #ffffff; display: inline;"> — released on April 26, 2025. </a></p>
           </div>
       
           <div class="older-versions">
@@ -1307,6 +1293,11 @@
                       </tr>
                   </thead>
                   <tbody>
+                      <tr>
+                        <td><a style="color: #ffffff;">1.1.7</a></td>
+                        <td><a href="Daline117.zip" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline116.zip (April 26, 2025)'});">daline117.zip</a></td>
+                        <td><a style="color: #ffffff;">April 26, 2025</a></td>
+                      </tr>
                       <tr>
                         <td><a style="color: #ffffff;">1.1.6</a></td>
                         <td><a href="Daline116.zip" target="_blank" class="download-link" onclick="gtag('event', 'download', {'event_category': 'download', 'event_label': 'daline116.zip (November 30, 2024)'});">daline116.zip</a></td>
@@ -1484,7 +1475,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="manual">
-              <a href="https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/680438/Daline_User_Manual.pdf?sequence=1&isAllowed=y">
+              <a href="https://github.com/JarvisETHZ/JarvisETHZ.github.io/blob/master/Daline_User_Manual_1.1.7.pdf">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1638,7 +1629,7 @@
                     <p><br></p>
     
                     <p class="service-item-text">
-                        Starting from version 1.1.5, <span class="dalineinline">Daline</span> is distributed under the 3-Clause BSD License. Copyright (c) 2024. Primary Developers to Daline. All rights reserved.</p>
+                        Starting from version 1.1.5, <span class="dalineinline">Daline</span> is distributed under the 3-Clause BSD License. Copyright (c) 2025. Primary Developers to Daline. All rights reserved.</p>
 
                        
                     <p><br></p>
@@ -1686,7 +1677,7 @@
                     <p><br></p>
     
                     <p class="service-item-text">
-                        The data generation functionality of <span class="dalineinline">Daline</span>  is built on <a href="https://matpower.org/" style="display: inline; color: #ffffff; text-decoration: underline;">MATPOWER</a>, and the built-in optimization methods of <span class="dalineinline">Daline</span>  utilize toolboxes <a href="https://cvxr.com/cvx/" style="display: inline; color: #ffffff; text-decoration: underline;">CVX</a> and <a href="https://yalmip.github.io/" style="display: inline; color: #ffffff; text-decoration: underline;">YALMIP</a>. To minimize installation and setup costs, <span class="dalineinline">Daline</span>  includes redistributed versions of these toolboxes, in strict compliance with their redistribution licenses. License files for these toolboxes are also included in <span class="dalineinline">Daline</span> . Therefore, if users redistribute <span class="dalineinline">Daline</span> , they must adhere not only to <span class="dalineinline">Daline</span>’s license but also to the licenses of these included toolboxes.
+                        The data generation functionality of <span class="dalineinline">Daline</span>  is built on <a href="https://matpower.org/" style="display: inline; color: #ffffff; text-decoration: underline;">MATPOWER</a>, and the built-in optimization methods of <span class="dalineinline">Daline</span>  utilize toolboxes <a href="https://cvxr.com/cvx/" style="display: inline; color: #ffffff; text-decoration: underline;">CVX</a> and <a href="https://yalmip.github.io/" style="display: inline; color: #ffffff; text-decoration: underline;">YALMIP</a>. To minimize installation and setup costs, <span class="dalineinline">Daline</span> includes redistributed versions of these toolboxes or facilitates their automatic download during installation, in strict compliance with their redistribution licenses. License files for these toolboxes are also included in <span class="dalineinline">Daline</span> . Therefore, if users redistribute <span class="dalineinline">Daline</span> , they must adhere not only to <span class="dalineinline">Daline</span>’s license but also to the licenses of these included toolboxes.
                     </p>
                   </div>
     
